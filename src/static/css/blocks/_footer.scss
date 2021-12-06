@@ -1,0 +1,144 @@
+$menu-link-hover: #001744;
+
+.footer {
+  &--dark {
+    background-color: #1D1D1F;
+  }
+
+  font: 14px/17px $font-railway;
+  color: $white;
+  background: #828282;
+
+  &__in {
+    max-width: 1140px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 43px 20px 30px;
+  }
+
+  &__cols {
+    display: flex;
+    padding: 0 0 53px;
+  }
+
+  &__col {
+    &:nth-child(2n+1) {
+      flex-basis: 42%;
+      padding-bottom: 120px;
+      border-right: 1px solid $white;
+    }
+    &:nth-child(2n) {
+      flex-basis: 58%;
+      padding-left: 35px;
+    }
+  }
+
+  &__menuCols {
+    display: flex;
+    margin: 38px auto 0;
+  }
+
+  &__menuCol {
+    padding-right: 30px;
+
+    &:nth-child(2n+1) {
+      flex-basis: 45%;
+    }
+    &:nth-child(2n) {
+      flex-basis: 55%;
+    }
+  }
+
+  &__menuOut {
+
+  }
+
+  &__menuOutItem {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__menuOutItemLink {
+    color: $white;
+
+    &:hover {
+      color: $menu-link-hover;
+    }
+  }
+
+  &__menu {
+
+  }
+
+  &__menuItem {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__menuItemTitle {
+    margin-bottom: 9px;
+  }
+
+  &__menuItemLink {
+    display: inline-block;
+    font: 12px/14px $font-railway;
+    color: $white;
+
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+
+    &:hover {
+      color: $menu-link-hover;
+    }
+  }
+
+  &__list {
+
+  }
+
+  &__listItem {
+    padding-bottom: 19px;
+    border-bottom: 1px solid $white;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &--textSmall {
+      padding: 10px 0 30px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &--noBorder {
+      padding: 12px 0 94px;
+      border-bottom: 0;
+    }
+
+    .icon {
+      position: relative;
+      top: -1px;
+      margin-right: 9px;
+    }
+  }
+
+  &__listItemLink {
+    color: $white;
+
+    &:hover {
+      color: $menu-link-hover;
+    }
+  }
+
+  &__about {
+
+  }
+
+  &__logoBottom {
+    display: block;
+    margin: 0 auto;
+  }
+}

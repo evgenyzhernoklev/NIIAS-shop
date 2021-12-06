@@ -2,24 +2,16 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: 16px/1.5 $font-montserrat;
+  font: 20px/1.2 $font-railway;
   color: $black;
-  background-color: $white-light;;
+  background-color: $white;
 }
 
 a, button {
-  transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal, box-shadow $transition-normal;
+  transition: color $transition-fast, border-color $transition-fast, background-color $transition-fast, box-shadow $transition-fast;
 }
 
 .icon {
   display: inline-block;
   vertical-align: middle;
-}
-
-.currency {
-  font-size: 75%;
-}
-
-.textBold {
-  font-weight: 700;
 }

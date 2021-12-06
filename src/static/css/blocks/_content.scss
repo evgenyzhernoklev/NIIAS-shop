@@ -1,27 +1,35 @@
 .content {
   &__in {
     margin: 0 auto;
-    padding: 20px 20px 0;
+    padding: 0 20px;
     max-width: 1280px;
     min-width: 320px;
-    background: $white;
-    padding: 60px 40px 40px;
 
     &:not(:last-child) {
       margin-bottom: 20px;
     }
 
-    &--small {
-      padding-left: 120px;
-      padding-right: 120px;
+    &--text {
+      padding-top: 114px;
+      padding-bottom: 162px;
     }
   }
 
   &__title {
-
+    margin-bottom: 10px;
+    font-size: 58px;
   }
 
   &__subtitle {
+    margin-bottom: 19px;
+    font-size: 48px;
+  }
 
+  &__text {
+    font-size: 20px;
+
+    &--med {
+      max-width: 930px;
+    }
   }
 }

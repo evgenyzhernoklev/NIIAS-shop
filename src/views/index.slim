@@ -7,6 +7,62 @@ html lang="ru"
     include menu
 
     .content
+      .content__in.content__in--text
+        h2.content__subtitle
+          | <span class="colorRed">NIIAS</span> labs.
+        p.content__text.content__text--med
+          | Профессиональная среда, где разные сервисы, образовательные курсы
+          |  и продукты Института образуют эффективную экосистему. Среда,
+          |  позволяющая вам определять перспективы долгосрочного развития
+          |  железных дорог и научно-технического прогресса, повышать
+          |  квалификацию и проходить профессиональную переподготовку,
+          |  исследовать и прокладывать железнодорожные маршруты с помощью
+          |  специализированной картографической продукции, а также с жаждой
+          |  первооткрывателя проводить уникальные лабораторные испытания,
+          |  комбинировать их по своему усмотрению и в соответствии
+          |  с требованиями ОАО «РЖД».
+          br
+          | А мощь наших знаний и опыта в железнодорожной отрасли будут
+          |  искусно вам в этом помогать.
+
+    .content.bgLight
       .content__in
+        .content__siteSections.siteSections
+          .siteSections__col
+            h3.siteSections__title
+              | Лабораториум
+            p.siteSections__text
+              | Воплощайте самые смелые <br>проекты.
+              br
+              a.siteSections__link href=""
+                | Подробнее
+                include icons/arrow-more
+            a.siteSections__imgWrapper href=""
+              include icons/laboratorium
+              include icons/laboratorium-hover
+          .siteSections__col
+            h3.siteSections__title
+              | Карториум
+            p.siteSections__text
+              | Вам открыты все <br>пути.
+              br
+              a.siteSections__link href=""
+                | Подробнее
+                include icons/arrow-more
+            a.siteSections__imgWrapper href=""
+              include icons/kartorium
+              include icons/kartorium-hover
+          .siteSections__col
+            h3.siteSections__title
+              | Лекториум
+            p.siteSections__text
+              | Прокачайте свои <br>навыки.
+              br
+              a.siteSections__link href=""
+                | Подробнее
+                include icons/arrow-more
+            a.siteSections__imgWrapper href=""
+              include icons/lectorium
+              include icons/lectorium-hover
 
     include footer

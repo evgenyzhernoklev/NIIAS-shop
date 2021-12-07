@@ -7,11 +7,24 @@ body {
   background-color: $white;
 }
 
-a, button {
-  transition: color $transition-fast, border-color $transition-fast, background-color $transition-fast, box-shadow $transition-fast;
+a,
+button,
+.icon {
+  transition: color $transition-fast,
+              border-color $transition-fast,
+              background-color $transition-fast,
+              box-shadow $transition-fast;
 }
 
 .icon {
   display: inline-block;
   vertical-align: middle;
+}
+
+.colorRed {
+  color: $red;
+}
+
+.bgLight {
+  background-color: $white-light;
 }

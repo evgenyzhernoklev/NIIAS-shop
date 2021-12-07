@@ -76,9 +76,9 @@ const argv = yargs.argv,
 			watch: "./src/static/images/svg/*.svg"
 		},
 		fonts: {
-			src: "./src/static/fonts/**/*.{woff,woff2}",
+			src: "./src/static/fonts/**/*.{woff,woff2,otf,ttf}",
 			dist: "./dist/static/fonts/",
-			watch: "./src/static/fonts/**/*.{woff,woff2}"
+			watch: "./src/static/fonts/**/*.{woff,woff2,otf,ttf}"
 		},
 		favicons: {
 			src: "./src/static/images/favicon.{jpg,jpeg,png,gif}",

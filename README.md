@@ -1,7 +1,7 @@
 # NIIAS-shop
 
 ## Установка
-Установите [Yarn](https://yarnpkg.com/en/docs/install).
+Установите [Yarn](https://yarnpkg.com/getting-started/install).
 
 * скачайте сборку: ```git clone https://github.com/evgenyzhernoklev/NIIAS-shop.git```;
 * установите ```gulp``` глобально: ```yarn global add gulp-cli```;

@@ -1,0 +1,53 @@
+// colors
+.colorRed {
+  color: $red;
+}
+.bgLight {
+  background-color: $white-light;
+}
+
+// border-radius
+.br40 {
+  border-radius: 40px;
+}
+
+// margins
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb60 {
+  margin-bottom: 60px;
+}
+.mb90 {
+  margin-bottom: 90px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+
+// paddings
+.pa0 {
+  padding: 0;
+}
+.pa40 {
+  padding: 40px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.pr10p {
+  padding-right: 10%;
+}
+
+// font-sizes
+.fs24 {
+  font-size: 24px;
+}
+
+// text-align
+.tac {
+  text-align: center;
+}

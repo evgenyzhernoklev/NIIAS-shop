@@ -1,22 +1,24 @@
 .content {
+  padding: 0 40px;
+
   &__in {
     margin: 0 auto;
-    padding: 0 20px;
-    max-width: 1280px;
+    padding: 120px 80px 133px;
+    max-width: 1360px;
     min-width: 320px;
 
-    &:not(:last-child) {
-      margin-bottom: 20px;
+    &--small {
+      padding-left: 6.6%;
+      padding-right: 6.6%;
     }
-
-    &--text {
+    &--main {
       padding-top: 114px;
       padding-bottom: 162px;
     }
   }
 
   &__title {
-    margin-bottom: 10px;
+    margin-bottom: 92px;
     font-size: 58px;
   }
 
@@ -30,6 +32,15 @@
 
     &--med {
       max-width: 930px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    &--shadow {
+      border-radius: 55px;
+      box-shadow: -13px 13px 9px rgba(0, 0, 0, 0.09);
     }
   }
 }

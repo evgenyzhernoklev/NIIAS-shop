@@ -37,10 +37,11 @@
     "use strict"; // import Dropdowns  from "../js/dropdown";
 
     document.addEventListener('DOMContentLoaded', function () {
-      var buttonToShowHiddenInfo = document.body.querySelectorAll('.js-hidden-info-button');
+      // toggle hidden info block
+      var buttonToggleHiddenInfo = document.body.querySelectorAll('.js-hidden-info-button');
 
-      for (var i = 0; i < buttonToShowHiddenInfo.length; i++) {
-        buttonToShowHiddenInfo[i].addEventListener('click', function (e) {
+      for (var i = 0; i < buttonToggleHiddenInfo.length; i++) {
+        buttonToggleHiddenInfo[i].addEventListener('click', function (e) {
           e.target.closest('.js-hidden-info').classList.toggle('is-shown');
         });
       }

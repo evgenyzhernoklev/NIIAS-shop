@@ -182,6 +182,12 @@ button,
   background-color: #1D1D1F;
 }
 
+.footer--dark .footer__menuOutItemLink:hover,
+.footer--dark .footer__menuItemLink:hover,
+.footer--dark .footer__listItemLink:hover {
+  color: #4182ff;
+}
+
 .footer__in {
   max-width: 1140px;
   min-width: 320px;
@@ -303,10 +309,16 @@ button,
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.15s linear, visibility 0.15s linear;
+  transition: opacity 0.15s linear, visibility 0.15s linear, background-color 0.15s linear;
 }
 
 .hiddenInfo.is-shown .hiddenInfo__button:after {
   background-color: #ffffff;
+}
+
+.hiddenInfo.is-shown .hiddenInfo__button:hover:before,
+.hiddenInfo.is-shown .hiddenInfo__button:hover:after {
+  background-color: #d1d1d1;
 }
 
 .hiddenInfo.is-shown .hiddenInfo__hidden {
@@ -334,6 +346,7 @@ button,
   height: 35px;
   background-color: #828282;
   border-radius: 5px;
+  transition: background-color 0.15s linear;
 }
 
 .hiddenInfo__button:before {
@@ -343,13 +356,28 @@ button,
   visibility: visible;
   opacity: 1;
   transition: opacity 0.15s linear, visibility 0.15s linear;
+  transition: opacity 0.15s linear, visibility 0.15s linear, background-color 0.15s linear;
 }
 
 .hiddenInfo__button:after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(90deg);
-  transition: background-color 0.15s linear;
+}
+
+.hiddenInfo__button:hover:before,
+.hiddenInfo__button:hover:after {
+  background-color: #999999;
+}
+
+.hiddenInfo__button--white:before,
+.hiddenInfo__button--white:after {
+  background-color: #ffffff;
+}
+
+.hiddenInfo__button--white:hover:before,
+.hiddenInfo__button--white:hover:after {
+  background-color: #d1d1d1;
 }
 
 .hiddenInfo__hidden {
@@ -371,6 +399,85 @@ button,
 
 .hiddenInfo__hiddenText {
   flex-basis: 100%;
+}
+
+.linkDetail {
+  display: inline-block;
+  font: 18px/22px "FSRAILWAY Book", sans-serif;
+  color: #2871FF;
+}
+
+.linkDetail .icon {
+  margin-left: 10px;
+  fill: #2871FF;
+  transition: transform 0.15s linear, fill 0.15s linear;
+}
+
+.linkDetail:hover {
+  color: rgba(16, 86, 235, 0.75);
+}
+
+.linkDetail:hover .icon {
+  fill: rgba(16, 86, 235, 0.75);
+  transform: translateX(5px);
+}
+
+.logo {
+  position: absolute;
+  top: 36px;
+  left: 89px;
+  display: inline-block;
+  font: 32px/38px "FSRAILWAY Book", sans-serif;
+  letter-spacing: -0.005em;
+}
+
+.logo:hover .logo__companyActivity {
+  color: #E41E12;
+}
+
+.logo__companyName {
+  text-transform: uppercase;
+  color: #E41E12;
+}
+
+.logo__companyActivity {
+  color: #ffffff;
+  transition: color 0.15s linear;
+}
+
+.noticeMore {
+  display: block;
+  position: absolute;
+  top: 113px;
+  left: 0;
+  right: 0;
+  font: 18px/22px "FSRAILWAY Book", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1D1D1F;
+}
+
+.noticeMore:hover {
+  background-color: #2871FF;
+}
+
+.noticeMore:hover .noticeMore__link {
+  color: #ffffff;
+}
+
+.noticeMore:hover .icon {
+  fill: #ffffff;
+}
+
+.noticeMore__in {
+  margin: 0 auto;
+  padding: 15px 80px 15px;
+  max-width: 1360px;
+  min-width: 320px;
+}
+
+.noticeMore__link {
+  margin-left: 23px;
 }
 
 .siteSections {
@@ -395,25 +502,7 @@ button,
 }
 
 .siteSections__link {
-  display: inline-block;
   margin-top: 30px;
-  font-size: 18px;
-  color: #2871FF;
-}
-
-.siteSections__link .icon {
-  margin-left: 10px;
-  fill: #2871FF;
-  transition: transform 0.15s linear, fill 0.15s linear;
-}
-
-.siteSections__link:hover {
-  color: rgba(16, 86, 235, 0.75);
-}
-
-.siteSections__link:hover .icon {
-  fill: rgba(16, 86, 235, 0.75);
-  transform: translateX(5px);
 }
 
 .siteSections__imgWrapper {
@@ -454,12 +543,24 @@ button,
   background-image: linear-gradient(to right, #4CB8C4, #3CD3AD);
 }
 
+.colorWhite {
+  color: #ffffff;
+}
+
 .colorRed {
   color: #E41E12;
 }
 
 .bgLight {
   background-color: #F9F9F9;
+}
+
+.bgDark {
+  background-color: #1D1D1F;
+}
+
+.bgBlack {
+  background-color: #151516;
 }
 
 .br40 {
@@ -500,6 +601,10 @@ button,
 
 .pr10p {
   padding-right: 10%;
+}
+
+.pt170 {
+  padding-top: 170px;
 }
 
 .fs24 {

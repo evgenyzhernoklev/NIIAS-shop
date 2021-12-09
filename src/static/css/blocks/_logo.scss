@@ -1,0 +1,26 @@
+$logo-red: #E41E12;
+
+.logo {
+  position: absolute;
+  top: 36px;
+  left: 89px;
+  display: inline-block;
+  font: 32px/38px $font-railway;
+  letter-spacing: -0.005em;
+
+  &:hover {
+    .logo__companyActivity {
+      color: $logo-red;
+    }
+  }
+
+  &__companyName {
+    text-transform: uppercase;
+    color: $logo-red;
+  }
+
+  &__companyActivity {
+    color: $white;
+    transition: color $transition-fast;
+  }
+}

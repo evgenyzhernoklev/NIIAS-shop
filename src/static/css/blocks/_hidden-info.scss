@@ -5,9 +5,17 @@
     .hiddenInfo__button {
       &:before {
         @include hide();
+        transition: opacity $transition-fast, visibility $transition-fast, background-color $transition-fast;
       }
       &:after {
         background-color: $white;
+      }
+
+      &:hover {
+        &:before,
+        &:after {
+          background-color: #d1d1d1;
+        }
       }
     }
 
@@ -34,18 +42,40 @@
       height: 35px;
       background-color: #828282;
       border-radius: 5px;
+      transition: background-color $transition-fast;
     }
     &:before {
       top: 0;
       left: 50%;
       transform: translateX(-50%);
       @include show();
+      transition: opacity $transition-fast, visibility $transition-fast, background-color $transition-fast;
     }
     &:after {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(90deg);
-      transition: background-color $transition-fast;
+    }
+
+    &:hover {
+      &:before,
+      &:after {
+        background-color: #999999;
+      }
+    }
+
+    &--white {
+      &:before,
+      &:after {
+        background-color: $white;
+      }
+
+      &:hover {
+        &:before,
+        &:after {
+          background-color: #d1d1d1;
+        }
+      }
     }
   }
 

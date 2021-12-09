@@ -1,8 +1,15 @@
 $menu-link-hover: #001744;
+$menu-link-hover-dark: #4182ff;
 
 .footer {
   &--dark {
     background-color: #1D1D1F;
+
+    .footer__menuOutItemLink:hover,
+    .footer__menuItemLink:hover,
+    .footer__listItemLink:hover {
+      color: $menu-link-hover-dark;
+    }
   }
 
   font: 14px/17px $font-railway;
@@ -49,10 +56,6 @@ $menu-link-hover: #001744;
     }
   }
 
-  &__menuOut {
-
-  }
-
   &__menuOutItem {
     &:not(:last-child) {
       margin-bottom: 25px;
@@ -65,10 +68,6 @@ $menu-link-hover: #001744;
     &:hover {
       color: $menu-link-hover;
     }
-  }
-
-  &__menu {
-
   }
 
   &__menuItem {
@@ -93,10 +92,6 @@ $menu-link-hover: #001744;
     &:hover {
       color: $menu-link-hover;
     }
-  }
-
-  &__list {
-
   }
 
   &__listItem {
@@ -131,10 +126,6 @@ $menu-link-hover: #001744;
     &:hover {
       color: $menu-link-hover;
     }
-  }
-
-  &__about {
-
   }
 
   &__logoBottom {

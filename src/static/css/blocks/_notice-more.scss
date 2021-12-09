@@ -1,0 +1,34 @@
+.noticeMore {
+  display: block;
+  position: absolute;
+  top: 113px;
+  left: 0;
+  right: 0;
+  font: 18px/22px $font-railway;
+  text-align: center;
+  color: $white;
+  background-color: #1D1D1F;
+
+  &:hover {
+    background-color: $blue;
+
+    .noticeMore__link {
+      color: $white;
+    }
+
+    .icon {
+      fill: $white;
+    }
+  }
+
+  &__in {
+    margin: 0 auto;
+    padding: 15px 80px 15px;
+    max-width: 1360px;
+    min-width: 320px;
+  }
+
+  &__link {
+    margin-left: 23px;
+  }
+}

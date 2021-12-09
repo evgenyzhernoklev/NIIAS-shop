@@ -6,7 +6,61 @@ html lang="ru"
   body
     include menu
 
-    .content
+    .content.bgLight
       .content__in
+        h1.content__title.tac
+          | Радуют все дороги.
+        .content__cols.colsFlex
+          .colsFlex__col.colsFlex__col--2.pr20
+            p.content__text.fs24.pr10p
+              | Схемы железных дорог нашей страны с&nbsp;высокой степенью
+              |  графической информации помогут вам определить расположение
+              |  железнодорожных пунктов относительно других объектов местности,
+              |  а&nbsp;подробная детализация тематической основы — установить
+              |  их функциональное назначение.
+          .colsFlex__col.colsFlex__col--2.colsFlex.colsFlex--right.pl20
+            .colsFlex__col
+              img.content__img.content__img--shadow src="../static/images/lectorium-map.png"
+
+    .content.mt60
+      .content__in.bgLight.br40
+        .content__cols.colsFlex
+          .colsFlex__col.colsFlex__col--2
+            h2.content__title.mb60
+              | Исследуйте детально.
+            p.content__text
+              | Деление на действующие и&nbsp;строящиеся железные дороги,
+              |  внешние и&nbsp;неэксплуатируемые пути, узловые, конечные,
+              |  пограничные станции, разъезды, обгонные пункты, остановочные
+              |  пункты, блокпосты, путевые посты и&nbsp;их названия позволит
+              |  вам получить полное представление об&nbsp;особенностях
+              |  маршрута.
+          .colsFlex__col.colsFlex__col--2
+
+    .content.mt60.mb60
+      .content__in.pa0
+        .content__cols.colsFlex.colsFlex--stretch
+          .colsFlex__col.colsFlex__col--2p.bgLight.pa40.br40.hiddenInfo.js-hidden-info
+            h3.content__subtitle.mb30
+              | Всегда найдется поблизости
+            p.content__text
+              | Более 6 500 железнодорожных пунктов помогут вам
+              |  сориентироваться, когда вы ищете место дислокации вагонов
+              |  или контейнеров.
+            span.hiddenInfo__button.js-hidden-info-button
+            .hiddenInfo__hidden.pa40.br40
+              p.hiddenInfo__hiddenText
+                | Более 6 500
+                br
+                | железнодорожных пунктов помогут вам сориентироваться, когда
+                |  вы ищите место дислокации вагонов или контейнеров.
+
+          .colsFlex__col.colsFlex__col--2p.bgLight.pa40.br40
+            h3.content__subtitle.textGradient.mb90 data-color="green"
+              | Определяйте расстояния на&nbsp;железнодорожном транспорте.
+            p.content__text
+              | Чтобы вам было легче планировать маршрут, в названиях
+              |  железнодорожных пунктов указан километраж, позволяющий
+              |  определить расстояние между ними.
 
     include footer

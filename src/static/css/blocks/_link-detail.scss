@@ -1,0 +1,20 @@
+.linkDetail {
+  display: inline-block;
+  font: 18px/22px $font-railway;
+  color: $blue;
+
+  .icon {
+    margin-left: 10px;
+    fill: $blue;
+    transition: transform $transition-fast, fill $transition-fast;
+  }
+
+  &:hover {
+    color: $blue-hover;
+
+    .icon {
+      fill: $blue-hover;
+      transform: translateX(5px);
+    }
+  }
+}

@@ -3,10 +3,61 @@ html lang="ru"
   head
     include head
     title NIIAS shop - Лабораториум
-  body
+  body.pt170.bgBlack
+    include logo
     include menu
 
-    .content
-      .content__in
+    a.noticeMore href="#"
+      .noticeMore__in
+        | Последние новости: узнайте, что нового появилось.
+        span.noticeMore__link.linkDetail
+          | Подробнее
+          include icons/arrow-more
 
-    include footer
+    .content.colorWhite
+      .content__in
+        h1.content__title.tac
+          | Всего так много.
+          br
+          | Всё доступно.
+        .content__cols.colsFlex
+          .colsFlex__col.colsFlex__col--2.pr20
+            / img.content__img.content__img--shadow src="../static/images/lectorium-map.png"
+          .colsFlex__col.colsFlex__col--2.colsFlex.colsFlex--right.pl20
+            .colsFlex__col
+              p.content__text
+                | Вы сможете провести целый комплекс испытаний: ресурсные,
+                |  испытания на&nbsp;отказ, комплексная техническая экспертиза
+                |  светодиодных осветительных приборов на&nbsp;соответствие
+                |  утвержденным в&nbsp;ОАО&nbsp;«РЖД» техническим требованиям,
+                |  например, анализ технических, конструктивных
+                |  и&nbsp;технологических решений, устойчивость
+                |  к&nbsp;ударно-вибрационным нагрузкам, климатическим
+                |  воздействиям и&nbsp;многое другое.
+
+    .content.mt60.mb60.colorWhite
+      .content__in.pa0
+        .content__cols.colsFlex.colsFlex--stretch
+          .colsFlex__col.colsFlex__col--2p.bgDark.pa40.br40.hiddenInfo.js-hidden-info
+            h3.content__subtitle.tac.mb30
+              | Выберите
+              br
+              | свои испытания
+            span.hiddenInfo__button.hiddenInfo__button--white.js-hidden-info-button
+            .hiddenInfo__hidden.pa40.br40
+              p.hiddenInfo__hiddenText
+                | Измерительный и приборный парки постоянно обновляются,
+                |  расширяется область аккредитации на отдельные виды испытаний,
+                |  чтобы вам было из чего выбирать.
+
+          .colsFlex__col.colsFlex__col--2p.bgDark.pa40.br40
+            h3.content__subtitle.mb90
+              | Комбинируйте в&nbsp;удовольствие.
+            p.content__text
+              | Когда образец подвержен воздействию двух и более внешних
+              |  факторов, вам останется только их выбрать. Вы сможете
+              |  проводить сразу несколько испытаний в одном месте. В настоящее
+              |  время в России такие исследования можно пройти только
+              |  в отдельных лабораториях.
+
+    include footer-dark

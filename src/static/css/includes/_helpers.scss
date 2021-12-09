@@ -1,9 +1,20 @@
-// colors
+// text colors
+.colorWhite {
+  color: $white;
+}
 .colorRed {
   color: $red;
 }
+
+// bg colors
 .bgLight {
   background-color: $white-light;
+}
+.bgDark {
+  background-color: #1D1D1F;
+}
+.bgBlack {
+  background-color: #151516;
 }
 
 // border-radius
@@ -40,6 +51,9 @@
 }
 .pr10p {
   padding-right: 10%;
+}
+.pt170 {
+  padding-top: 170px;
 }
 
 // font-sizes

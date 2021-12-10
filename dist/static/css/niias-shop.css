@@ -77,6 +77,13 @@ sup {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "FSRAILWAY Book Oblique";
+  src: url("../fonts/fsrailway/FSRAILWAY-Book-Oblique.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -124,6 +131,10 @@ button,
   flex-basis: calc(50% - 20px);
 }
 
+.colsFlex__col--text {
+  flex-basis: 55%;
+}
+
 .content {
   padding: 0 40px;
 }
@@ -145,12 +156,26 @@ button,
   padding-bottom: 162px;
 }
 
+.content__in--lectorium .content__title {
+  margin: 0 auto 53px;
+  max-width: 600px;
+  font-size: 90px;
+  line-height: 93%;
+}
+
+.content__in--lectorium .content__text {
+  margin: 0 auto;
+  max-width: 540px;
+  color: #858D92;
+}
+
 .content__title {
   margin-bottom: 92px;
   font-size: 58px;
 }
 
-.content__subtitle {
+.content__subtitle,
+.listAdv__title {
   margin-bottom: 19px;
   font-size: 48px;
 }
@@ -170,6 +195,22 @@ button,
 .content__img--shadow {
   border-radius: 55px;
   box-shadow: -13px 13px 9px rgba(0, 0, 0, 0.09);
+}
+
+.content__img--bg {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  width: 30%;
+}
+
+.blockquote {
+  text-align: center;
+}
+
+.blockquote__text {
+  margin-bottom: 100px;
+  font: 48px/58px "FSRAILWAY Book Oblique", sans-serif;
 }
 
 .footer {
@@ -422,6 +463,55 @@ button,
   transform: translateX(5px);
 }
 
+.listAdv {
+  display: flex;
+  align-items: stretch;
+  max-width: 1360px;
+  min-width: 320px;
+  margin: 0 auto;
+  min-height: 500px;
+  background-color: #F9F9F9;
+  border-radius: 40px;
+}
+
+.listAdv:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.listAdv__col--img {
+  flex-basis: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.listAdv__col--img[data-bg=lectorium-advantages-1] {
+  background-image: url("../images/lectorium-advantages-1.png");
+}
+
+.listAdv__col--img[data-bg=lectorium-advantages-2] {
+  background-image: url("../images/lectorium-advantages-2.png");
+}
+
+.listAdv__col--img[data-bg=lectorium-advantages-3] {
+  background-image: url("../images/lectorium-advantages-3.png");
+}
+
+.listAdv__col--img:nth-child(2n) {
+  border-radius: 0 40px 40px 0;
+}
+
+.listAdv__col--img:nth-child(2n+1) {
+  border-radius: 40px 0 0 40px;
+}
+
+.listAdv__col--text {
+  flex-basis: 60%;
+  align-self: center;
+  padding: 40px;
+  text-align: center;
+}
+
 .logo {
   position: absolute;
   top: 36px;
@@ -429,6 +519,10 @@ button,
   display: inline-block;
   font: 32px/38px "FSRAILWAY Book", sans-serif;
   letter-spacing: -0.005em;
+}
+
+.logo--dark .logo__companyActivity {
+  color: #181818;
 }
 
 .logo:hover .logo__companyActivity {
@@ -457,7 +551,13 @@ button,
   background-color: #1D1D1F;
 }
 
+.noticeMore--light {
+  color: #181818;
+  background-color: #EEEEEE;
+}
+
 .noticeMore:hover {
+  color: #ffffff;
   background-color: #2871FF;
 }
 
@@ -543,12 +643,24 @@ button,
   background-image: linear-gradient(to right, #4CB8C4, #3CD3AD);
 }
 
+.textGradient[data-color=blue] {
+  background-image: linear-gradient(to right, #5433FF, #20BDFF 50%, #A5FECB);
+}
+
 .colorWhite {
   color: #ffffff;
 }
 
 .colorRed {
   color: #E41E12;
+}
+
+.tac {
+  text-align: center;
+}
+
+.fs24 {
+  font-size: 24px;
 }
 
 .bgLight {
@@ -561,6 +673,10 @@ button,
 
 .bgBlack {
   background-color: #151516;
+}
+
+.lg[data-gradient=green-yellow] {
+  background: linear-gradient(90deg, #ABECD6 0%, #FBED96 100%);
 }
 
 .br40 {
@@ -583,6 +699,11 @@ button,
   margin-top: 60px;
 }
 
+.mtb150 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
 .pa0 {
   padding: 0;
 }
@@ -603,16 +724,17 @@ button,
   padding-right: 10%;
 }
 
+.plr10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .pt170 {
   padding-top: 170px;
 }
 
-.fs24 {
-  font-size: 24px;
-}
-
-.tac {
-  text-align: center;
+.positionR {
+  position: relative;
 }
 
 @media (max-width: 767px) {

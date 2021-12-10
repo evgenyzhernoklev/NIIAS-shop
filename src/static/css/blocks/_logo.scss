@@ -8,6 +8,12 @@ $logo-red: #E41E12;
   font: 32px/38px $font-railway;
   letter-spacing: -0.005em;
 
+  &--dark {
+    .logo__companyActivity {
+      color: $black;
+    }
+  }
+
   &:hover {
     .logo__companyActivity {
       color: $logo-red;

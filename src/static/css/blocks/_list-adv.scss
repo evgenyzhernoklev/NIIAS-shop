@@ -1,0 +1,54 @@
+.listAdv {
+  display: flex;
+  align-items: stretch;
+  max-width: 1360px;
+  min-width: 320px;
+  margin: 0 auto;
+  min-height: 500px;
+  background-color: $white-light;
+  border-radius: 40px;
+
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  &__col {
+    &--img {
+      flex-basis: 40%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      &[data-bg="lectorium-advantages-1"] {
+        background-image: url('../images/lectorium-advantages-1.png');
+      }
+      &[data-bg="lectorium-advantages-2"] {
+        background-image: url('../images/lectorium-advantages-2.png');
+      }
+      &[data-bg="lectorium-advantages-3"] {
+        background-image: url('../images/lectorium-advantages-3.png');
+      }
+
+      &:nth-child(2n) {
+        border-radius: 0 40px 40px 0;
+      }
+      &:nth-child(2n + 1) {
+        border-radius: 40px 0 0 40px;
+      }
+    }
+    &--text {
+      flex-basis: 60%;
+      align-self: center;
+      padding: 40px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    @extend .content__subtitle;
+  }
+
+  &__text {
+
+  }
+}

@@ -1,9 +1,19 @@
-// text colors
+// text color
 .colorWhite {
   color: $white;
 }
 .colorRed {
   color: $red;
+}
+
+// text-align
+.tac {
+  text-align: center;
+}
+
+// font-size
+.fs24 {
+  font-size: 24px;
 }
 
 // bg colors
@@ -15,6 +25,13 @@
 }
 .bgBlack {
   background-color: #151516;
+}
+
+// gradients
+.lg {
+  &[data-gradient="green-yellow"] {
+    background: linear-gradient(90deg, #ABECD6 0%, #FBED96 100%);
+  }
 }
 
 // border-radius
@@ -35,6 +52,10 @@
 .mt60 {
   margin-top: 60px;
 }
+.mtb150 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
 
 // paddings
 .pa0 {
@@ -52,16 +73,15 @@
 .pr10p {
   padding-right: 10%;
 }
+.plr10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .pt170 {
   padding-top: 170px;
 }
 
-// font-sizes
-.fs24 {
-  font-size: 24px;
-}
-
-// text-align
-.tac {
-  text-align: center;
+// position
+.positionR {
+  position: relative;
 }

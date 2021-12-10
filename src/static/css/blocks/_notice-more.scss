@@ -9,7 +9,13 @@
   color: $white;
   background-color: #1D1D1F;
 
+  &--light {
+    color: $black;
+    background-color: #EEEEEE;
+  }
+
   &:hover {
+    color: $white;
     background-color: $blue;
 
     .noticeMore__link {

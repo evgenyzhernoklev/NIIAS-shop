@@ -5,4 +5,7 @@
   &[data-color="green"] {
     background-image: linear-gradient(to right, #4CB8C4, #3CD3AD);
   }
+  &[data-color="blue"] {
+    background-image: linear-gradient(to right, #5433FF, #20BDFF 50%, #A5FECB);
+  }
 }

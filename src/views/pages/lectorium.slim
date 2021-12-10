@@ -4,9 +4,76 @@ html lang="ru"
     include head
     title NIIAS shop - Лекториум
   body
+    include logo-dark
     include menu
 
-    .content
-      .content__in
+    a.noticeMore.noticeMore--light href="#"
+      .noticeMore__in
+        | Последние новости: узнайте, что нового появилось.
+        span.noticeMore__link.linkDetail
+          | Подробнее
+          include icons/arrow-more
+
+    .content.bgLight.pt170.tac
+      .content__in.content__in--lectorium
+        h1.content__title.textGradient data-color="blue"
+          | Исполняйте задуманное.
+        p.content__text.fs24
+          | Повышайте квалификацию или&nbsp;проходите
+          |  профессиональную переподготовку
+          |  в&nbsp;соответствии со&nbsp;своими целями и&nbsp;задачами.
+
+    .content.mtb150
+      .content__in.br40.lg data-gradient="green-yellow"
+        .blockquote
+          blockquote.blockquote__text
+            | «Цитата».
+          p.blockquote__author
+            | Доктор технических наук, профессор И.Н. Розенберг
+
+    .content.bgLight.mb60
+      .content__in.positionR
+        .content__cols.colsFlex
+          .colsFlex__col.colsFlex__col--text
+            h2.content__title.mb60
+              | Обучайтесь в&nbsp;научно-технической среде.
+            p.content__text.pr10p
+              | Целый научно-исследовательский и&nbsp;проектно-конструкторский
+              |  институт возможностей для&nbsp;вашего образования.
+        img.content__img.content__img--bg src="../static/images/persons/lectorium-person.png"
+
+    .content.mb60
+      .content__listAdv.listAdv
+        .listAdv__col.listAdv__col--img.bgImg data-bg="lectorium-advantages-1"
+        .listAdv__col.listAdv__col--text
+          h3.listAdv__title
+            | Вы только послушайте.
+          p.listAdv__text.plr10p
+            | Лекционные занятия проведут для&nbsp;вас преподаватели
+            |  с&nbsp;необходимым опытом и&nbsp;квалификацией, научные
+            |  сотрудники Института, а&nbsp;также (по&nbsp;согласованию)
+            |  руководители и&nbsp;специалисты ОАО&nbsp;«РЖД».
+      .content__listAdv.listAdv
+        .listAdv__col.listAdv__col--text
+          h3.listAdv__title
+            | Вместе продуктивнее.
+          p.listAdv__text
+            | Вы будете обеспечены необходимой нормативно-справочной,
+            |  учебно-методической литературой и&nbsp;информационными
+            |  материалами. А&nbsp;современное оборудование
+            |  и&nbsp;специализированное программное обеспечение
+            |  будут способствовать лучшему теоретическому
+            |  и&nbsp;практическому усвоению.
+        .listAdv__col.listAdv__col--img.bgImg data-bg="lectorium-advantages-2"
+      .content__listAdv.listAdv
+        .listAdv__col.listAdv__col--img.bgImg data-bg="lectorium-advantages-3"
+        .listAdv__col.listAdv__col--text
+          h3.listAdv__title
+            | Заряжайтесь энергичнее.
+          p.listAdv__text.plr10p
+            | Мы позаботимся не&nbsp;только о&nbsp;ваших знаниях,
+            |  но&nbsp;и&nbsp;о&nbsp;правильном питании. Непосредственно
+            |  в&nbsp;здании учебного корпуса вас ждёт вкусный
+            |  и&nbsp;горячий обед.
 
     include footer

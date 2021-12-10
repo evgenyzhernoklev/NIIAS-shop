@@ -22,7 +22,17 @@ html lang="ru"
           | Всё доступно.
         .content__cols.colsFlex
           .colsFlex__col.colsFlex__col--2.pr20
-            / img.content__img.content__img--shadow src="../static/images/lectorium-map.png"
+            .content__animation.animationScale
+              .animationScale__in
+                img.animationScale__img src="../static/images/laboratorium-scale-1.png" data-index="1"
+              .animationScale__in
+                img.animationScale__img src="../static/images/laboratorium-scale-2.png" data-index="2"
+              .animationScale__in
+                img.animationScale__img src="../static/images/laboratorium-scale-3.png" data-index="3"
+              .animationScale__in
+                img.animationScale__img src="../static/images/laboratorium-scale-4.png" data-index="4"
+              .animationScale__in
+                img.animationScale__img src="../static/images/laboratorium-scale-5.png" data-index="5"
           .colsFlex__col.colsFlex__col--2.colsFlex.colsFlex--right.pl20
             .colsFlex__col
               p.content__text
@@ -35,14 +45,17 @@ html lang="ru"
                 |  к&nbsp;ударно-вибрационным нагрузкам, климатическим
                 |  воздействиям и&nbsp;многое другое.
 
-    .content.mt60.mb60.colorWhite
+    .content.mt10.mb60.colorWhite
       .content__in.pa0
         .content__cols.colsFlex.colsFlex--stretch
-          .colsFlex__col.colsFlex__col--2p.bgDark.pa40.br40.hiddenInfo.js-hidden-info
-            h3.content__subtitle.tac.mb30
+          .colsFlex__col.colsFlex__col--2p.bgDark.pa40.pb120.br40.hiddenInfo.js-hidden-info
+            h3.content__subtitle.mb30.tac
               | Выберите
               br
               | свои испытания
+            .content__rotator.rotatorList
+              include rotator-labs
+              include rotator-labs
             span.hiddenInfo__button.hiddenInfo__button--white.js-hidden-info-button
             .hiddenInfo__hidden.pa40.br40
               p.hiddenInfo__hiddenText

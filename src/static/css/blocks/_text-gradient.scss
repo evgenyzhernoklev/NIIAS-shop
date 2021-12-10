@@ -8,4 +8,19 @@
   &[data-color="blue"] {
     background-image: linear-gradient(to right, #5433FF, #20BDFF 50%, #A5FECB);
   }
+  &[data-color="rotator-list-1"] {
+    background-image: linear-gradient(to right, #E8FF49, #37FF37);
+  }
+  &[data-color="rotator-list-2"] {
+    background-image: linear-gradient(to right, #FFFC2A, #FEFED3);
+  }
+  &[data-color="rotator-list-3"] {
+    background-image: linear-gradient(to right, #C92CF8, #32AFE4);
+  }
+  &[data-color="rotator-list-4"] {
+    background-image: linear-gradient(to right, #4753FF, #85EED8);
+  }
+  &[data-color="rotator-list-5"] {
+    background-image: linear-gradient(to right, #2FBFED, #2F80ED);
+  }
 }

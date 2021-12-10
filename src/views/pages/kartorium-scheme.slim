@@ -1,0 +1,92 @@
+doctype html
+html lang="ru"
+  head
+    include head
+    title NIIAS shop - Карториум - схемы
+  body
+    include logo-dark
+    include menu
+
+    .content.bgLight
+      .content__in
+        .content__cols.colsFlex
+          .colsFlex__col.colsFlex__col--2.colsFlex.pr20
+            .colsFlex__col.pr17p
+              img.content__img.content__img--shadow src="../static/images/gif/kartorium-scheme.gif"
+          .colsFlex__col.colsFlex__col--2.colsFlex--right
+            p.content__subtitle.colorBlue
+              | Железнее некуда
+            p.content__text
+              | На&nbsp;схемах показаны действующие железные дороги России
+              |  и&nbsp;их границы с&nbsp;условными обозначениями нанесённых
+              |  станций, разъездов, обгонных пунктов, остановочных пунктов,
+              |  путевых постов и&nbsp;их названия с&nbsp;указанием километража,
+              |  позволяющего определять расстояния между железнодорожными
+              |  пунктами.
+
+    .content.mt60
+      .content__in.pa0.ptb70
+        .content__cols.colsFlex.colsFlex--stretch.tac
+          .colsFlex__col.colsFlex__col--2p
+            h3.content__subtitle.colorGreen
+              | Выбирайте и покупайте.
+            p.content__text.plr40
+              | Вы можете заказать схемы как на&nbsp;бумажном носителе,
+              |  холсте, так&nbsp;и&nbsp;на&nbsp;самоклеящейся плёнке.
+              |  По&nbsp;вашему желанию схемы ламинируются матовой
+              |  или&nbsp;глянцевой плёнкой, а&nbsp;также могут быть
+              |  оформлены в&nbsp;багет.
+          .colsFlex__col.colsFlex__col--2p
+            h3.content__subtitle.colorGreen
+              | Сделайте их особенными.
+            p.content__text.plr40
+              | По вашему желанию схемы могут быть дополнены нанесением
+              |  любой другой необходимой информации, например,
+              |  местоположением промышленных предприятий, заводов, портов
+              |  или&nbsp;персонализацией.
+
+    .content.mt60
+      .content__in.pa0
+        .content__consultation.consultation
+          .consultation__cols
+            .consultation__col.consultation__col--info.pb0
+              h4.consultation__title
+                | Индивидуальные консультации со&nbsp;специалистом
+                |  при&nbsp;покупке.
+              .consultation__personWrapper
+                img.consultation__person src="../static/images/persons/kartorium-person.png"
+            .consultation__col.consultation__col--info.tac
+              h4.consultation__subtitle
+                | Как бы вы хотели получить помощь?
+              ul.consultation__contacts.contactsList
+                li.contactsList__item
+                  .contactsList__imgWrapper
+                    img.contactsList__img src="../static/images/icons/svg/mail.svg"
+                  p.contactsList__itemTitle
+                    | Напишите нам на почту.
+                  p.contactsList__itemText
+                    | Напишите нам на почту <a class="contactsList__itemLink" href="mailto:mta@vniias.ru">mta@vniias.ru</a>
+                li.contactsList__item
+                  .contactsList__imgWrapper
+                    img.contactsList__img src="../static/images/icons/svg/phone.svg"
+                  p.contactsList__itemTitle
+                    | Позвоните нам.
+                  p.contactsList__itemText
+                    | Позвоните нам с&nbsp;9:00 до&nbsp;18:00 (МСК)
+                    |  c&nbsp;понедельника по&nbsp;пятницу по&nbsp;телефону
+                    br
+                    a.contactsList__itemLink href="tel:+74992628883"
+                      | +7(499)-262-88-83
+
+    .content.mtb60
+      .content__in.bgLight.br40.tac
+        h4.content__subtitle.mb50
+          | Получите помощь с выбором подходящей схемы
+        p.content__text.fs24
+          | Наш специалист поможет вам выбрать и купить нужную схему
+        p.content__text.mt60
+          a.content__link.linkDetail.fs24 href=""
+            | Пообщайтесь со специалистом
+            include icons/arrow-more
+
+    include footer

@@ -1,0 +1,113 @@
+$item-height: 160px;
+$container-height: calc($item-height * 5);
+
+.rotatorList {
+  position: relative;
+  height: $item-height;
+  overflow: hidden;
+
+  &__in {
+    position: absolute;
+    animation: 7s linear infinite rotation;
+    opacity: 0.5;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: $container-height;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: $item-height;
+  }
+
+  &__itemTitle {
+    flex-basis: 100%;
+    font-size: 59px;
+    line-height: 70px;
+    text-align: center;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+	}
+  5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  8% {
+    opacity: 0.5;
+  }
+
+  16% {
+    opacity: 0.5;
+  }
+  18% {
+    opacity: 1;
+    transform: translateY(-$item-height * 1);
+  }
+  23% {
+    opacity: 1;
+    transform: translateY(-$item-height * 1);
+  }
+  26% {
+    opacity: 0.5;
+  }
+
+  35% {
+    opacity: 0.5;
+  }
+  37% {
+    opacity: 1;
+    transform: translateY(-$item-height * 2);
+  }
+  42% {
+    opacity: 1;
+    transform: translateY(-$item-height * 2);
+  }
+  45% {
+    opacity: 0.5;
+  }
+
+  57% {
+    opacity: 0.5;
+  }
+  59% {
+    opacity: 1;
+    transform: translateY(-$item-height * 3);
+  }
+  64% {
+    opacity: 1;
+    transform: translateY(-$item-height * 3);
+  }
+  67% {
+    opacity: 0.5;
+  }
+
+  79% {
+    opacity: 0.5;
+  }
+  81% {
+    opacity: 1;
+    transform: translateY(-$item-height * 4);
+  }
+  86% {
+    opacity: 1;
+    transform: translateY(-$item-height * 4);
+  }
+  89% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateY(-$item-height * 5);
+	}
+}

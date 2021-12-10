@@ -5,6 +5,12 @@
 .colorRed {
   color: $red;
 }
+.colorGreen {
+  color: $green;
+}
+.colorBlue {
+  color: #0E90DB;
+}
 
 // text-align
 .tac {
@@ -40,8 +46,14 @@
 }
 
 // margins
+.mb10 {
+  margin-bottom: 10px;
+}
 .mb30 {
   margin-bottom: 30px;
+}
+.mb50 {
+  margin-bottom: 50px;
 }
 .mb60 {
   margin-bottom: 60px;
@@ -49,8 +61,18 @@
 .mb90 {
   margin-bottom: 90px;
 }
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
 .mt60 {
   margin-top: 60px;
+}
+.mtb60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .mtb150 {
   margin-top: 150px;
@@ -73,12 +95,42 @@
 .pr10p {
   padding-right: 10%;
 }
+.pr17p {
+  padding-right: 17%;
+}
+.pr25p {
+  padding-right: 25%;
+}
+.plr40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.plr-9p {
+  padding-left: 9%;
+  padding-right: 9%;
+}
 .plr10p {
   padding-left: 10%;
   padding-right: 10%;
 }
+.pt40 {
+  padding-top: 40px;
+}
 .pt170 {
   padding-top: 170px;
+}
+.pb0 {
+  padding-bottom: 0;
+}
+.pb70 {
+  padding-bottom: 70px;
+}
+.pb120 {
+  padding-bottom: 120px;
+}
+.ptb70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 // position

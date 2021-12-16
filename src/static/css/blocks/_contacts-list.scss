@@ -1,0 +1,36 @@
+.contactsList {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__itemTitle {
+    margin-bottom: 20px;
+    font: 24px/29px $font-railway;
+  }
+
+  &__itemText {
+    font: 18px/22px $font-railway;
+  }
+
+  &__itemLink {
+    color: $black;
+
+    &:hover {
+      color: $blue-hover;
+    }
+  }
+
+  &__imgWrapper {
+    margin-bottom: 30px;
+    height: 110px;
+    line-height: 110px;
+  }
+
+  &__img {
+    display: inline-block;
+    max-height: 110px;
+    vertical-align: middle;
+  }
+}

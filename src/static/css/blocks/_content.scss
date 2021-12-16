@@ -45,6 +45,10 @@
   &__text {
     font-size: 20px;
 
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
     &--med {
       max-width: 930px;
     }
@@ -62,6 +66,9 @@
       bottom: 0;
       right: 80px;
       width: 30%;
+    }
+    &[data-width="50%"] {
+      width: 50%;
     }
   }
 }

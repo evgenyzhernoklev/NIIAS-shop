@@ -1,0 +1,17 @@
+.schemesInfo {
+  position: relative;
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 980px;
+  }
+
+  &__about {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    font: 48px/120% $font-railway;
+  }
+}

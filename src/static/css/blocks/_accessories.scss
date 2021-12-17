@@ -1,0 +1,28 @@
+.accessories {
+  &__item {
+    position: relative;
+    padding-bottom: 300px;
+  }
+
+  &__itemTitle {
+    margin-bottom: 14px;
+    font-size: 48px;
+  }
+
+  &__itemDescription {
+    font-size: 20px;
+  }
+
+  &__itemAdv {
+    margin-top: 100px;
+    max-width: 380px;
+  }
+
+  &__itemAdvItem {
+    font-size: 24px;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}

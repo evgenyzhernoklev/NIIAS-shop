@@ -11,10 +11,16 @@
 .colorBlue {
   color: #0E90DB;
 }
+.colorBlueDark {
+  color: #004265;
+}
 
 // text-align
 .tac {
   text-align: center;
+}
+.tal {
+  text-align: left;
 }
 
 // font-size
@@ -49,6 +55,9 @@
 .mb10 {
   margin-bottom: 10px;
 }
+.mb20 {
+  margin-bottom: 20px;
+}
 .mb30 {
   margin-bottom: 30px;
 }
@@ -57,6 +66,9 @@
 }
 .mb60 {
   margin-bottom: 60px;
+}
+.mb70 {
+  margin-bottom: 70px;
 }
 .mb90 {
   margin-bottom: 90px;
@@ -94,6 +106,9 @@
 }
 .pr10p {
   padding-right: 10%;
+}
+.pr15p {
+  padding-right: 15%;
 }
 .pr17p {
   padding-right: 17%;

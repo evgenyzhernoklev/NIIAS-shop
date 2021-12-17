@@ -6,7 +6,7 @@
   .icon {
     margin-left: 10px;
     fill: $blue;
-    transition: transform $transition-fast, fill $transition-fast;
+    transition: transform $transition, fill $transition;
   }
 
   &:hover {

@@ -8,6 +8,12 @@
   &[data-color="blue"] {
     background-image: linear-gradient(to right, #5433FF, #20BDFF 50%, #A5FECB);
   }
+  &[data-color="orange"] {
+    background-image: linear-gradient(to right, #FF8008, #FFC837);
+  }
+  &[data-color="yellow-orange"] {
+    background-image: linear-gradient(to right, #FFE259, #FFA751);
+  }
   &[data-color="rotator-list-1"] {
     background-image: linear-gradient(to right, #E8FF49, #37FF37);
   }

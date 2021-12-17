@@ -41,6 +41,10 @@
       align-self: center;
       padding: 40px;
       text-align: center;
+
+      &.tal {
+        text-align: left;
+      }
     }
   }
 

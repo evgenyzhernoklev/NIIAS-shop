@@ -84,6 +84,13 @@ sup {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/caveat/Caveat.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -181,11 +188,12 @@ button,
 }
 
 .content__text {
+  margin-bottom: 20px;
   font-size: 20px;
 }
 
-.content__text:not(:last-child) {
-  margin-bottom: 20px;
+.content__text:last-child {
+  margin-bottom: 0;
 }
 
 .content__text--med {
@@ -210,6 +218,103 @@ button,
 
 .content__img[data-width="50%"] {
   width: 50%;
+}
+
+.accessoriesImg {
+  position: absolute;
+  right: 0;
+}
+
+.accessoriesImg[data-img="1"] {
+  top: 50px;
+  left: 330px;
+}
+
+.accessoriesImg[data-img="2"] {
+  top: 120px;
+  left: 330px;
+}
+
+.accessoriesImg__img {
+  max-width: 580px;
+}
+
+.accessoriesImg__text {
+  position: absolute;
+  right: -5%;
+  padding-left: 15px;
+  font: 36px/120% "Caveat", sans-serif;
+}
+
+.accessoriesImg__text:before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 100%;
+  display: inline-block;
+  height: 1px;
+  background-color: #181818;
+}
+
+.accessoriesImg__text[data-text="1"] {
+  top: 28%;
+}
+
+.accessoriesImg__text[data-text="1"]:before {
+  width: 72px;
+}
+
+.accessoriesImg__text[data-text="2"] {
+  top: 69%;
+}
+
+.accessoriesImg__text[data-text="2"]:before {
+  width: 293px;
+}
+
+.accessoriesImg__text[data-text="3"] {
+  top: 90%;
+}
+
+.accessoriesImg__text[data-text="3"]:before {
+  width: 160px;
+}
+
+.accessoriesImg__text[data-text="4"] {
+  top: 76%;
+  right: 3%;
+  text-align: center;
+}
+
+.accessoriesImg__text[data-text="4"]:before {
+  width: 162px;
+}
+
+.accessories__item {
+  position: relative;
+  padding-bottom: 300px;
+}
+
+.accessories__itemTitle {
+  margin-bottom: 14px;
+  font-size: 48px;
+}
+
+.accessories__itemDescription {
+  font-size: 20px;
+}
+
+.accessories__itemAdv {
+  margin-top: 100px;
+  max-width: 380px;
+}
+
+.accessories__itemAdvItem {
+  font-size: 24px;
+}
+
+.accessories__itemAdvItem:not(:last-child) {
+  margin-bottom: 18px;
 }
 
 .animationScale {
@@ -390,7 +495,6 @@ button,
 .consultation__title {
   font: 58px/120% "FSRAILWAY Book", sans-serif;
   letter-spacing: -0.045em;
-  color: #5F9800;
 }
 
 .consultation__subtitle {
@@ -744,6 +848,10 @@ button,
   text-align: center;
 }
 
+.listAdv__col--text.tal {
+  text-align: left;
+}
+
 .logo {
   position: absolute;
   top: 36px;
@@ -938,6 +1046,24 @@ button,
   }
 }
 
+.schemesInfo {
+  position: relative;
+}
+
+.schemesInfo__img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+}
+
+.schemesInfo__about {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  font: 48px/120% "FSRAILWAY Book", sans-serif;
+}
+
 .siteSections {
   display: flex;
   justify-content: space-between;
@@ -1005,6 +1131,14 @@ button,
   background-image: linear-gradient(to right, #5433FF, #20BDFF 50%, #A5FECB);
 }
 
+.textGradient[data-color=orange] {
+  background-image: linear-gradient(to right, #FF8008, #FFC837);
+}
+
+.textGradient[data-color=yellow-orange] {
+  background-image: linear-gradient(to right, #FFE259, #FFA751);
+}
+
 .textGradient[data-color=rotator-list-1] {
   background-image: linear-gradient(to right, #E8FF49, #37FF37);
 }
@@ -1041,8 +1175,16 @@ button,
   color: #0E90DB;
 }
 
+.colorBlueDark {
+  color: #004265;
+}
+
 .tac {
   text-align: center;
+}
+
+.tal {
+  text-align: left;
 }
 
 .fs24 {
@@ -1073,6 +1215,10 @@ button,
   margin-bottom: 10px;
 }
 
+.mb20 {
+  margin-bottom: 20px;
+}
+
 .mb30 {
   margin-bottom: 30px;
 }
@@ -1083,6 +1229,10 @@ button,
 
 .mb60 {
   margin-bottom: 60px;
+}
+
+.mb70 {
+  margin-bottom: 70px;
 }
 
 .mb90 {
@@ -1129,6 +1279,10 @@ button,
 
 .pr10p {
   padding-right: 10%;
+}
+
+.pr15p {
+  padding-right: 15%;
 }
 
 .pr17p {

@@ -10,10 +10,10 @@ body {
 a,
 button,
 .icon {
-  transition: color $transition-fast,
-              border-color $transition-fast,
-              background-color $transition-fast,
-              box-shadow $transition-fast;
+  transition: color $transition,
+              border-color $transition,
+              background-color $transition,
+              box-shadow $transition;
 }
 
 .icon {

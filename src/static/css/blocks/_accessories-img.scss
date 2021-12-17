@@ -1,0 +1,65 @@
+.accessoriesImg {
+  position: absolute;
+  right: 0;
+
+  &[data-img="1"] {
+    top: 50px;
+    left: 330px;
+  }
+  &[data-img="2"] {
+    top: 120px;
+    left: 330px;
+  }
+
+  &__img {
+    max-width: 580px;
+  }
+
+  &__text {
+    position: absolute;
+    right: -5%;
+    padding-left: 15px;
+    font: 36px/120% $font-caveat;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 22px;
+      right: 100%;
+      display: inline-block;
+      height: 1px;
+      background-color: $black;
+    }
+
+    &[data-text="1"] {
+      top: 28%;
+
+      &:before {
+        width: 72px;
+      }
+    }
+    &[data-text="2"] {
+      top: 69%;
+
+      &:before {
+        width: 293px;
+      }
+    }
+    &[data-text="3"] {
+      top: 90%;
+
+      &:before {
+        width: 160px;
+      }
+    }
+    &[data-text="4"] {
+      top: 76%;
+      right: 3%;
+      text-align: center;
+
+      &:before {
+        width: 162px;
+      }
+    }
+  }
+}

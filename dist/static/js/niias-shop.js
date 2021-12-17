@@ -33,7 +33,7 @@
 
   return r;
 })()({
-  "/Users/evgeny/Documents/projects/NIIAS-shop/src/static/js/niias-shop.js": [function (require, module, exports) {
+  "/Users/evgenyzhernoklev/Projects/NIIAS-shop/src/static/js/niias-shop.js": [function (require, module, exports) {
     "use strict"; // import Dropdowns  from "../js/dropdown";
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -47,5 +47,5 @@
       }
     });
   }, {}]
-}, {}, ["/Users/evgeny/Documents/projects/NIIAS-shop/src/static/js/niias-shop.js"]);
+}, {}, ["/Users/evgenyzhernoklev/Projects/NIIAS-shop/src/static/js/niias-shop.js"]);
 //# sourceMappingURL=maps/niias-shop.js.map

@@ -1,0 +1,128 @@
+.menu {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 90px;
+  overflow: hidden;
+  transition: width $transition;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: fixed;
+    right: 90px;
+    width: 2px;
+    transition: right $transition;
+  }
+
+  &:before {
+    top: 0;
+    bottom: 0;
+    background-color: #EBEBEB;
+  }
+  &:after {
+    top: 33px;
+    height: 97px;
+    background-color: #151516;
+  }
+
+  &.is-active {
+    width: 260px;
+    bottom: 0;
+    background-color: $white;
+
+    &:before,
+    &:after {
+      right: 260px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 65px;
+    right: 29px;
+    z-index: 1;
+  }
+
+  &__in {
+    padding: 124px 0 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity $transition, visibility $transition;
+
+    .is-active & {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__list {
+    position: relative;
+    padding: 0 28px;
+    background-color: $white;
+
+    & .menu__list {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      transition: left $transition;
+    }
+  }
+
+  &__listItem {
+    &.is-active .menu__list {
+      left: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__listItemLink {
+    position: relative;
+    display: block;
+    padding: 5px 0;
+    font: 18px/22px $font-railway;
+    text-transform: uppercase;
+    color: #151516;
+    cursor: pointer;
+    transition: color $transition;
+
+    .icon {
+      position: absolute;
+      top: 8px;
+      left: 162px;
+      stroke: #151516;
+      transition: stroke $transition, left $transition;
+    }
+
+    &:hover {
+      color: $blue;
+
+      .icon {
+        stroke: $blue;
+        left: 169px;
+      }
+    }
+
+    &--back {
+      padding-left: 20px;
+
+      .icon {
+        left: 0px;
+        transform: rotate(180deg);
+      }
+
+      &:hover {
+        .icon {
+          left: -7px;
+        }
+      }
+    }
+  }
+}

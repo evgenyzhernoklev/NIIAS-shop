@@ -103,7 +103,7 @@ body {
 a,
 button,
 .icon {
-  transition: color 0.15s linear, border-color 0.15s linear, background-color 0.15s linear, box-shadow 0.15s linear;
+  transition: color 0.15s ease-out, border-color 0.15s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
 }
 
 .icon {
@@ -1032,6 +1032,38 @@ button,
   margin: 0 auto;
 }
 
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger:hover .hamburger__line {
+  background-color: #2871FF;
+}
+
+.hamburger.is-active .hamburger__line:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.is-active .hamburger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active .hamburger__line:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.hamburger__line {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background-color: #181818;
+  transition: all 0.15s ease-out;
+}
+
+.hamburger__line:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .hiddenInfo {
   position: relative;
 }
@@ -1039,8 +1071,8 @@ button,
 .hiddenInfo.is-shown .hiddenInfo__button:before {
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.15s linear, visibility 0.15s linear;
-  transition: opacity 0.15s linear, visibility 0.15s linear, background-color 0.15s linear;
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out, background-color 0.15s ease-out;
 }
 
 .hiddenInfo.is-shown .hiddenInfo__button:after {
@@ -1055,7 +1087,7 @@ button,
 .hiddenInfo.is-shown .hiddenInfo__hidden {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.15s linear, visibility 0.15s linear;
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
 }
 
 .hiddenInfo__button {
@@ -1077,7 +1109,7 @@ button,
   height: 35px;
   background-color: #828282;
   border-radius: 5px;
-  transition: background-color 0.15s linear;
+  transition: background-color 0.15s ease-out;
 }
 
 .hiddenInfo__button:before {
@@ -1086,8 +1118,8 @@ button,
   transform: translateX(-50%);
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.15s linear, visibility 0.15s linear;
-  transition: opacity 0.15s linear, visibility 0.15s linear, background-color 0.15s linear;
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out, background-color 0.15s ease-out;
 }
 
 .hiddenInfo__button:after {
@@ -1122,7 +1154,7 @@ button,
   height: 100%;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.15s linear, visibility 0.15s linear;
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
   font: 36px/43px "FSRAILWAY Book", sans-serif;
   color: #ffffff;
   background-color: #2871FF;
@@ -1141,7 +1173,7 @@ button,
 .linkDetail .icon {
   margin-left: 10px;
   fill: #2871FF;
-  transition: transform 0.15s linear, fill 0.15s linear;
+  transition: transform 0.15s ease-out, fill 0.15s ease-out;
 }
 
 .linkDetail:hover {
@@ -1230,7 +1262,133 @@ button,
 
 .logo__companyActivity {
   color: #ffffff;
-  transition: color 0.15s linear;
+  transition: color 0.15s ease-out;
+}
+
+.menu {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 90px;
+  overflow: hidden;
+  transition: width 0.15s ease-out;
+}
+
+.menu:before,
+.menu:after {
+  content: "";
+  display: block;
+  position: fixed;
+  right: 90px;
+  width: 2px;
+  transition: right 0.15s ease-out;
+}
+
+.menu:before {
+  top: 0;
+  bottom: 0;
+  background-color: #EBEBEB;
+}
+
+.menu:after {
+  top: 33px;
+  height: 97px;
+  background-color: #151516;
+}
+
+.menu.is-active {
+  width: 260px;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.menu.is-active:before,
+.menu.is-active:after {
+  right: 260px;
+}
+
+.menu__close {
+  position: absolute;
+  top: 65px;
+  right: 29px;
+  z-index: 1;
+}
+
+.menu__in {
+  padding: 124px 0 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
+}
+
+.is-active .menu__in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__list {
+  position: relative;
+  padding: 0 28px;
+  background-color: #ffffff;
+}
+
+.menu__list .menu__list {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  transition: left 0.15s ease-out;
+}
+
+.menu__listItem.is-active .menu__list {
+  left: 0;
+}
+
+.menu__listItem:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.menu__listItemLink {
+  position: relative;
+  display: block;
+  padding: 5px 0;
+  font: 18px/22px "FSRAILWAY Book", sans-serif;
+  text-transform: uppercase;
+  color: #151516;
+  cursor: pointer;
+  transition: color 0.15s ease-out;
+}
+
+.menu__listItemLink .icon {
+  position: absolute;
+  top: 8px;
+  left: 162px;
+  stroke: #151516;
+  transition: stroke 0.15s ease-out, left 0.15s ease-out;
+}
+
+.menu__listItemLink:hover {
+  color: #2871FF;
+}
+
+.menu__listItemLink:hover .icon {
+  stroke: #2871FF;
+  left: 169px;
+}
+
+.menu__listItemLink--back {
+  padding-left: 20px;
+}
+
+.menu__listItemLink--back .icon {
+  left: 0px;
+  transform: rotate(180deg);
+}
+
+.menu__listItemLink--back:hover .icon {
+  left: -7px;
 }
 
 .noticeMore {
@@ -1463,13 +1621,13 @@ button,
 .siteSections__imgWrapper:hover .siteSections__imgHover {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.15s linear, visibility 0.15s linear;
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
 }
 
 .siteSections__imgHover {
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.15s linear, visibility 0.15s linear;
+  transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
 }
 
 .textGradient {

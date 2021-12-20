@@ -77,6 +77,9 @@
     &--2p {
       flex-basis: calc(50% - 20px);
     }
+    &--3p {
+      flex-basis: calc(100%/3 - 20px);
+    }
     &--text {
       flex-basis: 55%;
     }

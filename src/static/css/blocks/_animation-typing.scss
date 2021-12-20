@@ -1,0 +1,281 @@
+.animationTyping {
+  margin-left: auto;
+  margin-right: auto;
+  animation: 5s linear infinite moving;
+  transform: translateX(-48px);
+
+  &__move {
+    opacity: 0;
+    animation: 5s linear infinite fading-1;
+
+    &[data-move="1"] {
+      animation-name: fading-1;
+    }
+    &[data-move="2"] {
+      animation-name: fading-2;
+    }
+    &[data-move="3"] {
+      animation-name: fading-3;
+    }
+    &[data-move="4"] {
+      animation-name: fading-4;
+    }
+    &[data-move="5"] {
+      animation-name: fading-5;
+    }
+    &[data-move="6"] {
+      animation-name: fading-6;
+    }
+  }
+
+  &__typing {
+    opacity: 0;
+    animation: 5s linear infinite typing-1;
+
+    &[data-letter="1"] {
+      animation-name: typing-1;
+    }
+    &[data-letter="2"] {
+      animation-name: typing-2;
+    }
+    &[data-letter="3"] {
+      animation-name: typing-3;
+    }
+    &[data-letter="4"] {
+      animation-name: typing-4;
+    }
+    &[data-letter="5"] {
+      animation-name: typing-5;
+    }
+  }
+}
+
+@keyframes moving {
+  0% {
+    width: 0;
+  }
+
+  4% {
+    width: 19px;
+  }
+  9% {
+    width: 19px;
+  }
+
+  13% {
+    width: 38px;
+  }
+  18% {
+    width: 38px;
+  }
+
+  22% {
+    width: 58px;
+  }
+  27% {
+    width: 58px;
+  }
+
+  31% {
+    width: 80px;
+  }
+  36% {
+    width: 80px;
+  }
+
+  40% {
+    width: 93px;
+  }
+  45% {
+    width: 93px;
+  }
+
+  49% {
+    width: 113px;
+  }
+  54% {
+    width: 113px;
+  }
+
+  100% {
+    width: 113px;
+  }
+}
+
+@keyframes fading-1 {
+  0% {
+    opacity: 0;
+  }
+
+  4% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fading-2 {
+  0% {
+    opacity: 0;
+  }
+
+  13% {
+    opacity: 0;
+  }
+  14% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fading-3 {
+  0% {
+    opacity: 0;
+  }
+
+  22% {
+    opacity: 0;
+  }
+  23% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fading-4 {
+  0% {
+    opacity: 0;
+  }
+
+  31% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fading-5 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+  41% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fading-6 {
+  0% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing-1 {
+  0% {
+    opacity: 0;
+  }
+
+  57% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typing-2 {
+  0% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typing-3 {
+  0% {
+    opacity: 0;
+  }
+
+  73% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typing-4 {
+  0% {
+    opacity: 0;
+  }
+
+  81% {
+    opacity: 0;
+  }
+  82% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typing-5 {
+  0% {
+    opacity: 0;
+  }
+
+  89% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

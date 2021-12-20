@@ -1,0 +1,32 @@
+.designInfo {
+  align-items: center;
+  min-height: 580px;
+  padding: 160px 20px 100px;
+  text-align: center;
+  background-color: $white-light;
+  border-radius: 40px;
+
+  &[data-bg="kartorium-design-1"] {
+    background: url('../images/kartorium-design-1.png') no-repeat center center / cover;
+  }
+  &[data-bg="gradient"] {
+    background: linear-gradient(0deg, #F4E5CD 0%,
+                                      rgba(242, 210, 221, 0.7) 19.27%,
+                                      rgba(211, 229, 239, 0.49) 37.5%,
+                                      rgba(243, 243, 231, 0.4) 56.77%,
+                                      rgba(245, 245, 215, 0.3) 76.04%,
+                                      rgba(222, 234, 217, 0.15) 96.35%);
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    letter-spacing: -0.045em;
+    color: #622AFF;
+  }
+
+  &__text {
+    max-width: 310px;
+    margin: 0 auto;
+  }
+}

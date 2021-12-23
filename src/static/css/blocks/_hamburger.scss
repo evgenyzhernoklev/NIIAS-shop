@@ -1,0 +1,35 @@
+.hamburger {
+  cursor: pointer;
+
+  &:hover {
+    .hamburger__line {
+      background-color: $blue;
+    }
+  }
+
+  &.is-active {
+    .hamburger__line {
+      &:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+      }
+    }
+  }
+
+  &__line {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: $black;
+    transition: all $transition;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}

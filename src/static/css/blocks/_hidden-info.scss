@@ -98,3 +98,11 @@
     flex-basis: 100%;
   }
 }
+
+@media ($mobile) {
+  .hiddenInfo {
+    &__hidden {
+      font: 18px/1.4 $font-railway;
+    }
+  }
+}

@@ -30,3 +30,10 @@ $logo-red: #E41E12;
     transition: color $transition;
   }
 }
+
+@media ($mobile) {
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -6,13 +6,7 @@ html lang="ru"
   body
     include logo-dark
     include menu
-
-    a.noticeMore.noticeMore--light href="#"
-      .noticeMore__in
-        | Последние новости: узнайте, что нового появилось.
-        span.noticeMore__link.linkDetail
-          | Подробнее
-          include icons/arrow-more
+    include notice
 
     .content.bgLight.pt170.tac
       .content__in.content__in--lectorium
@@ -23,7 +17,7 @@ html lang="ru"
           |  профессиональную переподготовку
           |  в&nbsp;соответствии со&nbsp;своими целями и&nbsp;задачами.
 
-    .content.mtb150
+    .content.mtb150.mtb60-sm
       .content__in.br40.lg data-gradient="green-yellow"
         .blockquote
           blockquote.blockquote__text
@@ -33,27 +27,28 @@ html lang="ru"
 
     .content.bgLight.mb60
       .content__in.positionR
-        .content__cols.colsFlex
-          .colsFlex__col.colsFlex__col--text
-            h2.content__title.mb60
+        .content__cols.colsFlex.pb35p-md
+          .colsFlex__col.colsFlex__col--text.tac-md
+            h2.content__title.mb60.mb30-md.plr10p-md.plr0-sm
               | Обучайтесь в&nbsp;научно-технической среде.
-            p.content__text.pr10p
+            p.content__text.pr10p.plr10p-md.plr0-sm
               | Целый научно-исследовательский и&nbsp;проектно-конструкторский
               |  институт возможностей для&nbsp;вашего образования.
         img.content__img.content__img--bg src="../static/images/persons/lectorium-person.png"
 
-    .content.mb60
+    .content.mb60.mb20-sm
       .content__listAdv.listAdv
         .listAdv__col.listAdv__col--img.bgImg data-bg="lectorium-advantages-1"
         .listAdv__col.listAdv__col--text
           h3.listAdv__title
             | Вы только послушайте.
-          p.listAdv__text.plr10p
+          p.listAdv__text.plr10p.plr0-md
             | Лекционные занятия проведут для&nbsp;вас преподаватели
             |  с&nbsp;необходимым опытом и&nbsp;квалификацией, научные
             |  сотрудники Института, а&nbsp;также (по&nbsp;согласованию)
             |  руководители и&nbsp;специалисты ОАО&nbsp;«РЖД».
-      .content__listAdv.listAdv
+      .content__listAdv.listAdv.listAdv--rowR
+        .listAdv__col.listAdv__col--img.bgImg data-bg="lectorium-advantages-2"
         .listAdv__col.listAdv__col--text
           h3.listAdv__title
             | Вместе продуктивнее.
@@ -64,13 +59,12 @@ html lang="ru"
             |  и&nbsp;специализированное программное обеспечение
             |  будут способствовать лучшему теоретическому
             |  и&nbsp;практическому усвоению.
-        .listAdv__col.listAdv__col--img.bgImg data-bg="lectorium-advantages-2"
       .content__listAdv.listAdv
         .listAdv__col.listAdv__col--img.bgImg data-bg="lectorium-advantages-3"
         .listAdv__col.listAdv__col--text
           h3.listAdv__title
             | Заряжайтесь энергичнее.
-          p.listAdv__text.plr10p
+          p.listAdv__text.plr10p.plr0-md
             | Мы позаботимся не&nbsp;только о&nbsp;ваших знаниях,
             |  но&nbsp;и&nbsp;о&nbsp;правильном питании. Непосредственно
             |  в&nbsp;здании учебного корпуса вас ждёт вкусный

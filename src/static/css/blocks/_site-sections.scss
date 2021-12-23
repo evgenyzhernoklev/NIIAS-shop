@@ -49,3 +49,79 @@
     @include hide();
   }
 }
+
+@media ($desktop) {
+  .siteSections {
+    justify-content: center;
+
+    &__col {
+      flex-basis: 240px;
+      margin: 0 20px;
+    }
+
+    &__imgWrapper {
+      height: 170px;
+      line-height: 170px;
+
+      .icon {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media ($tablet) {
+  .siteSections {
+    flex-wrap: wrap;
+
+    &__col {
+      flex-basis: 100%;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__link {
+      margin-top: 20px;
+    }
+
+    &__imgWrapper {
+      margin: 0 auto;
+      width: 400px;
+      height: 280px;
+      line-height: 280px;
+
+      .icon {
+        width: 340px;
+      }
+    }
+  }
+}
+
+@media ($mobile) {
+  .siteSections {
+    &__title {
+      font: 30px/36px $font-railway;
+    }
+
+    &__imgWrapper {
+      width: 280px;
+      height: 200px;
+      line-height: 200px;
+
+      .icon {
+        width: 240px;
+      }
+    }
+  }
+}

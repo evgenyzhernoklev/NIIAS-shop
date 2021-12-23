@@ -1,11 +1,12 @@
 .content {
+  margin: 0 auto;
+  min-width: 320px;
   padding: 0 40px;
 
   &__in {
     margin: 0 auto;
-    padding: 120px 80px 133px;
     max-width: 1360px;
-    min-width: 320px;
+    padding: 120px 80px 133px;
 
     &--small {
       padding-left: 6.6%;
@@ -15,7 +16,6 @@
       padding-top: 114px;
       padding-bottom: 162px;
     }
-
     &--lectorium {
       .content__title {
         margin: 0 auto 53px;
@@ -73,6 +73,89 @@
     }
     &[data-width="50%"] {
       width: 50%;
+    }
+  }
+}
+
+@media ($desktop) {
+  .content {
+    &__in {
+      padding-left: 0;
+      padding-right: 0;
+
+      &--small {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      &--lectorium {
+        .content__title {
+          max-width: 500px;
+          font-size: 72px;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__subtitle {
+      font-size: 42px;
+    }
+  }
+}
+
+@media ($tablet) {
+  .content {
+    &__img {
+      &--bg {
+        right: 50%;
+        transform: translateX(50%);
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media ($mobile) {
+  .content {
+    padding: 0 20px;
+
+    &__in {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      &--main {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      &--lectorium {
+        .content__title {
+          margin-bottom: 40px;
+          max-width: 280px;
+          font-size: 46px;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__img {
+      &--bg {
+        width: 38%;
+      }
     }
   }
 }

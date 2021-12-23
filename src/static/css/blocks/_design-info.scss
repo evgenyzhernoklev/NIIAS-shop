@@ -30,3 +30,34 @@
     margin: 0 auto;
   }
 }
+
+@media ($tablet) {
+  .designInfo {
+    padding: 80px 20px 60px;
+    min-height: 0;
+
+    &[data-bg="kartorium-design-1"] {
+      background-position: bottom;
+
+      .designInfo__text {
+        padding: 20px;
+        border-radius: 40px;
+        background-color: rgba($white, 0.9);
+      }
+    }
+
+    &__text {
+      max-width: 480px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .designInfo  {
+    padding: 60px 20px 40px;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}

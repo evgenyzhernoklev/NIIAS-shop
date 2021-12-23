@@ -34,3 +34,17 @@
     vertical-align: middle;
   }
 }
+
+@media ($mobile) {
+  .contactsList {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__imgWrapper {
+      margin-bottom: 20px;
+    }
+  }
+}

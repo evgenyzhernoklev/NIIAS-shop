@@ -147,14 +147,15 @@ button,
 }
 
 .content {
+  margin: 0 auto;
+  min-width: 320px;
   padding: 0 40px;
 }
 
 .content__in {
   margin: 0 auto;
-  padding: 120px 80px 133px;
   max-width: 1360px;
-  min-width: 320px;
+  padding: 120px 80px 133px;
 }
 
 .content__in--small {
@@ -785,6 +786,7 @@ button,
 }
 
 .blockquote {
+  padding: 0 40px;
   text-align: center;
 }
 
@@ -811,6 +813,9 @@ button,
 
 .consultation__col--info:nth-child(2n+1) {
   flex-basis: calc(60% - 20px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .consultation__col--info:nth-child(2n) {
@@ -828,12 +833,14 @@ button,
 }
 
 .consultation__personWrapper {
+  flex-basis: 100%;
   display: flex;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 
 .consultation__person {
-  width: 80%;
+  width: 100%;
   max-width: 340px;
 }
 
@@ -1186,10 +1193,10 @@ button,
 }
 
 .listAdv {
+  position: relative;
   display: flex;
   align-items: stretch;
   max-width: 1360px;
-  min-width: 320px;
   margin: 0 auto;
   min-height: 500px;
   background-color: #F9F9F9;
@@ -1200,11 +1207,20 @@ button,
   margin-bottom: 60px;
 }
 
+.listAdv--rowR {
+  flex-direction: row-reverse;
+}
+
+.listAdv--rowR .listAdv__col--img {
+  border-radius: 0 40px 40px 0;
+}
+
 .listAdv__col--img {
   flex-basis: 40%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 40px 0 0 40px;
 }
 
 .listAdv__col--img[data-bg=lectorium-advantages-1] {
@@ -1217,14 +1233,6 @@ button,
 
 .listAdv__col--img[data-bg=lectorium-advantages-3] {
   background-image: url("../images/lectorium-advantages-3.png");
-}
-
-.listAdv__col--img:nth-child(2n) {
-  border-radius: 0 40px 40px 0;
-}
-
-.listAdv__col--img:nth-child(2n+1) {
-  border-radius: 40px 0 0 40px;
 }
 
 .listAdv__col--text {
@@ -1434,12 +1442,14 @@ button,
 
 .rotatorList {
   position: relative;
+  margin: 0 -30px;
   height: 160px;
   overflow: hidden;
 }
 
 .rotatorList__in {
   position: absolute;
+  width: 100%;
   animation: 7s linear infinite rotation;
   opacity: 0.5;
 }
@@ -1728,142 +1738,752 @@ button,
 }
 
 .mb10 {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 
 .mb20 {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .mb30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 .mb50 {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
 
 .mb60 {
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
 }
 
 .mb70 {
-  margin-bottom: 70px;
+  margin-bottom: 70px !important;
 }
 
 .mb90 {
-  margin-bottom: 90px;
+  margin-bottom: 90px !important;
 }
 
 .mb200 {
-  margin-bottom: 200px;
+  margin-bottom: 200px !important;
 }
 
 .mt10 {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 
 .mt20 {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
 .mt60 {
-  margin-top: 60px;
+  margin-top: 60px !important;
 }
 
 .mtb60 {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
 }
 
 .mtb150 {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 150px !important;
+  margin-bottom: 150px !important;
 }
 
 .pa0 {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .pa40 {
-  padding: 40px;
-}
-
-.pl20 {
-  padding-left: 20px;
-}
-
-.pr20 {
-  padding-right: 20px;
-}
-
-.pr10p {
-  padding-right: 10%;
-}
-
-.pr15p {
-  padding-right: 15%;
-}
-
-.pr17p {
-  padding-right: 17%;
-}
-
-.pr25p {
-  padding-right: 25%;
-}
-
-.plr40 {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.plr-9p {
-  padding-left: 9%;
-  padding-right: 9%;
-}
-
-.plr10p {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 40px !important;
 }
 
 .pt40 {
-  padding-top: 40px;
+  padding-top: 40px !important;
 }
 
 .pt170 {
-  padding-top: 170px;
+  padding-top: 170px !important;
+}
+
+.pr20 {
+  padding-right: 20px !important;
+}
+
+.pr10p {
+  padding-right: 10% !important;
+}
+
+.pr15p {
+  padding-right: 15% !important;
+}
+
+.pr17p {
+  padding-right: 17% !important;
+}
+
+.pr25p {
+  padding-right: 25% !important;
+}
+
+.plr40 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.plr9p {
+  padding-left: 9% !important;
+  padding-right: 9% !important;
+}
+
+.plr10p {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
 
 .pb0 {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
 .pb70 {
-  padding-bottom: 70px;
+  padding-bottom: 70px !important;
 }
 
 .pb120 {
-  padding-bottom: 120px;
+  padding-bottom: 120px !important;
 }
 
 .ptb70 {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
+}
+
+.pl20 {
+  padding-left: 20px !important;
 }
 
 .positionR {
   position: relative;
 }
 
-@media (max-width: 767px) {
+.hidden-lg {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .content__in {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content__in--small {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content__in--lectorium .content__title {
+    max-width: 500px;
+    font-size: 72px;
+  }
+
+  .content__title {
+    font-size: 50px;
+  }
+
+  .content__subtitle,
+  .listAdv__title {
+    font-size: 42px;
+  }
+
+  .animationScale__in {
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+
+  .listAdv {
+    min-height: 400px;
+  }
+
+  .rotatorList__itemTitle {
+    font-size: 42px;
+    line-height: 60px;
+  }
+
+  .siteSections {
+    justify-content: center;
+  }
+
+  .siteSections__col {
+    flex-basis: 240px;
+    margin: 0 20px;
+  }
+
+  .siteSections__imgWrapper {
+    height: 170px;
+    line-height: 170px;
+  }
+
+  .siteSections__imgWrapper .icon {
+    width: 200px;
+  }
+
+  .fs32-lg {
+    font-size: 32px;
+  }
+
+  .plr40-lg {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .colsFlex {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .colsFlex--roads > .colsFlex__col:nth-child(2n+1) {
+    flex-basis: 60%;
+  }
+
+  .colsFlex--roads > .colsFlex__col:nth-child(2n) {
+    flex-basis: 40%;
+  }
+
+  .colsFlex__col:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .colsFlex__col--2p {
+    flex-basis: 80%;
+  }
+
+  .colsFlex__col--3p {
+    flex-basis: 100%;
+  }
+
+  .colsFlex__col--text {
+    flex-basis: 100%;
+  }
+
+  .colsFlex__col--full-md {
+    flex-basis: 100%;
+  }
+
+  .content__img--bg {
+    right: 50%;
+    transform: translateX(50%);
+    width: 40%;
+  }
+
+  .consultation__cols {
+    flex-wrap: wrap;
+  }
+
+  .consultation__col:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .consultation__col--info:nth-child(2n+1) {
+    flex-basis: 100%;
+  }
+
+  .consultation__col--info:nth-child(2n) {
+    flex-basis: 100%;
+  }
+
+  .designInfo {
+    padding: 80px 20px 60px;
+    min-height: 0;
+  }
+
+  .designInfo[data-bg=kartorium-design-1] {
+    background-position: bottom;
+  }
+
+  .designInfo[data-bg=kartorium-design-1] .designInfo__text {
+    padding: 20px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .designInfo__text {
+    max-width: 480px;
+  }
+
+  .footer__cols {
+    padding: 0 0 40px;
+  }
+
+  .footer__col {
+    padding-bottom: 40px;
+  }
+
+  .footer__col:nth-child(2n+1) {
+    flex-basis: 50%;
+    padding-bottom: 40px;
+  }
+
+  .footer__col:nth-child(2n) {
+    flex-basis: 50%;
+  }
+
+  .listAdv__col--text {
+    padding: 30px;
+  }
+
+  .noticeMore__in {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .siteSections {
+    flex-wrap: wrap;
+  }
+
+  .siteSections__col {
+    flex-basis: 100%;
+    margin: 0;
+  }
+
+  .siteSections__col:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .siteSections__title {
+    margin-bottom: 20px;
+  }
+
+  .siteSections__text {
+    margin-bottom: 30px;
+  }
+
+  .siteSections__link {
+    margin-top: 20px;
+  }
+
+  .siteSections__imgWrapper {
+    margin: 0 auto;
+    width: 400px;
+    height: 280px;
+    line-height: 280px;
+  }
+
+  .siteSections__imgWrapper .icon {
+    width: 340px;
+  }
+
+  .tac-md {
+    text-align: center;
+  }
+
+  .mt40-md {
+    margin-top: 40px !important;
+  }
+
+  .mb0-md {
+    margin-bottom: 0 !important;
+  }
+
+  .mb30-md {
+    margin-bottom: 30px !important;
+  }
+
+  .mb40-md {
+    margin-bottom: 40px !important;
+  }
+
+  .mb60-md {
+    margin-bottom: 60px !important;
+  }
+
+  .mb100-md {
+    margin-bottom: 100px !important;
+  }
+
+  .mtb40-md {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .pt60-md {
+    padding-top: 60px !important;
+  }
+
+  .pr5p-md {
+    padding-right: 5% !important;
+  }
+
+  .plr0-md {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .plr10p-md {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+
+  .pb35p-md {
+    padding-bottom: 35% !important;
+  }
+
+  .hidden-lg {
+    display: block;
+  }
+
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
   .colsFlex {
     flex-wrap: wrap;
   }
 
-  .colsFlex__col--2 {
+  .colsFlex--reverseCol-sm {
+    flex-direction: column-reverse;
+  }
+
+  .colsFlex--roads > .colsFlex__col:nth-child(2n+1) {
     flex-basis: 100%;
+  }
+
+  .colsFlex--roads > .colsFlex__col:nth-child(2n) {
+    flex-basis: 100%;
+  }
+
+  .colsFlex__col--2,
+  .colsFlex__col--2p {
+    flex-basis: 100%;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .content__in {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .content__in--main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .content__in--lectorium .content__title {
+    margin-bottom: 40px;
+    max-width: 280px;
+    font-size: 46px;
+  }
+
+  .content__title {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  .content__subtitle,
+  .listAdv__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .content__text {
+    font-size: 18px;
+  }
+
+  .content__img--bg {
+    width: 38%;
+  }
+
+  .blockquote {
+    padding: 0 20px;
+  }
+
+  .blockquote__text {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .consultation__col--info {
+    padding: 40px 20px;
+  }
+
+  .consultation__personWrapper {
+    margin-top: 30px;
+  }
+
+  .consultation__title {
+    font-size: 30px;
+  }
+
+  .consultation__subtitle {
+    font: 30px/36px "FSRAILWAY Book", sans-serif;
+  }
+
+  .consultation__contacts {
+    margin-top: 30px;
+  }
+
+  .contactsList__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .contactsList__imgWrapper {
+    margin-bottom: 20px;
+  }
+
+  .designInfo {
+    padding: 60px 20px 40px;
+  }
+
+  .designInfo__title {
+    margin-bottom: 30px;
+  }
+
+  .footer__in {
+    padding-top: 30px;
+  }
+
+  .footer__cols {
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+
+  .footer__col {
+    text-align: center;
+  }
+
+  .footer__col:nth-child(2n+1),
+  .footer__col:nth-child(2n) {
+    flex-basis: 100%;
+    padding-bottom: 20px;
+    padding-left: 0;
+    border-right: 0;
+  }
+
+  .footer__menuCols {
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  .footer__menuCol {
+    padding-right: 0;
+  }
+
+  .footer__menuCol:not(:last-child) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .footer__menuCol:nth-child(2n+1) {
+    flex-basis: 100%;
+  }
+
+  .footer__menuCol:nth-child(2n) {
+    flex-basis: 100%;
+  }
+
+  .footer__menuOutItem:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .footer__menuItem:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .footer__menuItemTitle {
+    margin-bottom: 7px;
+  }
+
+  .footer__menuItemLink:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .footer__listItem:first-child {
+    padding-top: 19px;
+    border-top: 1px solid #ffffff;
+  }
+
+  .footer__listItem:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer__listItem--textSmall {
+    padding-bottom: 20px;
+  }
+
+  .footer__listItem--noBorder {
+    padding-bottom: 24px;
+  }
+
+  .hiddenInfo__hidden {
+    font: 18px/1.4 "FSRAILWAY Book", sans-serif;
+  }
+
+  .listAdv {
+    position: relative;
+    display: block;
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .listAdv:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .listAdv--rowR {
+    flex-direction: row-reverse;
+  }
+
+  .listAdv--rowR .listAdv__col--img {
+    border-radius: 20px;
+  }
+
+  .listAdv__col--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .listAdv__col--text {
+    position: relative;
+    z-index: 1;
+    padding: 20px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+  }
+
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .rotatorList__itemTitle {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .siteSections__title {
+    font: 30px/36px "FSRAILWAY Book", sans-serif;
+  }
+
+  .siteSections__imgWrapper {
+    width: 280px;
+    height: 200px;
+    line-height: 200px;
+  }
+
+  .siteSections__imgWrapper .icon {
+    width: 240px;
+  }
+
+  .tac-sm {
+    text-align: center;
+  }
+
+  .fs24-sm {
+    font-size: 24px;
+  }
+
+  .fs21-sm {
+    font-size: 21px;
+  }
+
+  .mt20-sm {
+    margin-top: 20px !important;
+  }
+
+  .mt40-sm {
+    margin-top: 40px !important;
+  }
+
+  .mb0-sm {
+    margin-bottom: 0 !important;
+  }
+
+  .mb20-sm {
+    margin-bottom: 20px !important;
+  }
+
+  .mb30-sm {
+    margin-bottom: 30px !important;
+  }
+
+  .mb40-sm {
+    margin-bottom: 40px !important;
+  }
+
+  .mb60-sm {
+    margin-bottom: 60px !important;
+  }
+
+  .mtb40-sm {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .mtb60-sm {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .pa0-sm {
+    padding: 0 !important;
+  }
+
+  .pa20-sm {
+    padding: 20px !important;
+  }
+
+  .pt30-sm {
+    padding-top: 30px !important;
+  }
+
+  .pr0-sm {
+    padding-right: 0 !important;
+  }
+
+  .pb60-sm {
+    padding-bottom: 60px !important;
+  }
+
+  .pb100-sm {
+    padding-bottom: 100px !important;
+  }
+
+  .plr0-sm {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .plr20-sm {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+
+  .hidden-md {
+    display: block;
+  }
+
+  .hidden-sm {
+    display: none;
   }
 }
 /*# sourceMappingURL=maps/niias-shop.css.map */

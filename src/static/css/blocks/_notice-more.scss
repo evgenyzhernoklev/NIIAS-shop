@@ -38,3 +38,18 @@
     margin-left: 23px;
   }
 }
+
+@media ($tablet) {
+  .noticeMore {
+    &__in {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .noticeMore {
+    
+  }
+}

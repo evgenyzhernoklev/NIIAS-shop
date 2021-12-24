@@ -3,11 +3,13 @@ $container-height: calc($item-height * 5);
 
 .rotatorList {
   position: relative;
+  margin: 0 -30px;
   height: $item-height;
   overflow: hidden;
 
   &__in {
     position: absolute;
+    width: 100%;
     animation: 7s linear infinite rotation;
     opacity: 0.5;
 
@@ -30,6 +32,24 @@ $container-height: calc($item-height * 5);
     font-size: 59px;
     line-height: 70px;
     text-align: center;
+  }
+}
+
+@media ($desktop) {
+  .rotatorList {
+    &__itemTitle {
+      font-size: 42px;
+      line-height: 60px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .rotatorList {
+    &__itemTitle {
+      font-size: 28px;
+      line-height: 40px;
+    }
   }
 }
 

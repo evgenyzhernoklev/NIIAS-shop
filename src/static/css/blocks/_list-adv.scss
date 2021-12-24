@@ -1,8 +1,8 @@
 .listAdv {
+  position: relative;
   display: flex;
   align-items: stretch;
   max-width: 1360px;
-  min-width: 320px;
   margin: 0 auto;
   min-height: 500px;
   background-color: $white-light;
@@ -12,12 +12,21 @@
     margin-bottom: 60px;
   }
 
+  &--rowR {
+    flex-direction: row-reverse;
+
+    .listAdv__col--img {
+      border-radius: 0 40px 40px 0;
+    }
+  }
+
   &__col {
     &--img {
       flex-basis: 40%;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      border-radius: 40px 0 0 40px;
 
       &[data-bg="lectorium-advantages-1"] {
         background-image: url('../images/lectorium-advantages-1.png');
@@ -27,13 +36,6 @@
       }
       &[data-bg="lectorium-advantages-3"] {
         background-image: url('../images/lectorium-advantages-3.png');
-      }
-
-      &:nth-child(2n) {
-        border-radius: 0 40px 40px 0;
-      }
-      &:nth-child(2n + 1) {
-        border-radius: 40px 0 0 40px;
       }
     }
     &--text {
@@ -51,8 +53,59 @@
   &__title {
     @extend .content__subtitle;
   }
+}
 
-  &__text {
+@media ($desktop) {
+  .listAdv {
+    min-height: 400px;
+  }
+}
 
+@media ($tablet) {
+  .listAdv {
+    &__col {
+      &--text {
+        padding: 30px;
+      }
+    }
+  }
+}
+
+@media ($mobile) {
+  .listAdv {
+    position: relative;
+    display: block;
+    min-height: 0;
+    padding: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &--rowR {
+      flex-direction: row-reverse;
+
+      .listAdv__col--img {
+        border-radius: 20px;
+      }
+    }
+
+    &__col {
+      &--img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+      &--text {
+        position: relative;
+        z-index: 1;
+        padding: 20px 15px;
+        background-color: rgba($white, 0.9);
+        border-radius: 20px;
+      }
+    }
   }
 }

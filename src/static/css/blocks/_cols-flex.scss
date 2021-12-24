@@ -12,62 +12,6 @@
     align-items: stretch;
   }
 
-  // &--wrap {
-  //   flex-wrap: wrap;
-  // }
-  //
-  // &--center {
-  //   justify-content: center;
-  // }
-  //
-  // &--1 {
-  //   margin-bottom: -2%;
-  //
-  //   .colsFlex__col {
-  //     margin-bottom: 2%;
-  //   }
-  // }
-  //
-  // &--2 {
-  //   margin-bottom: -2%;
-  //
-  //   .colsFlex__col {
-  //     flex-basis: 49%;
-  //     margin: 0 2% 2% 0;
-  //
-  //     &:nth-child(2n) {
-  //       margin-right: 0;
-  //     }
-  //   }
-  // }
-
-  // &--3 {
-  //   margin-bottom: -2.6%;
-  //
-  //   .colsFlex__col {
-  //     flex-basis: 31.6%;
-  //     margin: 0 2.6% 2.6% 0;
-  //
-  //     &:nth-child(3n),
-  //     &:last-child {
-  //       margin-right: 0;
-  //     }
-  //   }
-  // }
-  //
-  // &--5 {
-  //   margin-bottom: -1%;
-  //
-  //   .colsFlex__col {
-  //     flex-basis: 19.2%;
-  //     margin: 0 1% 1% 0;
-  //
-  //     &:nth-child(5n) {
-  //       margin-right: 0;
-  //     }
-  //   }
-  // }
-
   &__col {
     flex-basis: 100%;
 
@@ -83,50 +27,67 @@
     &--text {
       flex-basis: 55%;
     }
-
-    // &--3 {
-    //   flex-basis: 33.33%;
-    // }
-    //
-    // &--4 {
-    //   flex-basis: 25%;
-    // }
-    //
-    // &--5 {
-    //   flex-basis: 20%;
-    // }
   }
 }
 
-// @media ($tablet) {
-//   .colsFlex {
-//     &__col {
-//       &--4 {
-//         flex-basis: 50%;
-//       }
-//     }
-//   }
-// }
+@media ($tablet) {
+  .colsFlex {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &--roads {
+      &  > .colsFlex__col {
+        &:nth-child(2n+1) {
+          flex-basis: 60%;
+        }
+        &:nth-child(2n) {
+          flex-basis: 40%;
+        }
+      }
+    }
+
+    &__col {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      &--2p {
+        flex-basis: 80%;
+      }
+      &--3p {
+        flex-basis: 100%;
+      }
+      &--text {
+        flex-basis: 100%;
+      }
+      &--full-md {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
 
 @media ($mobile) {
   .colsFlex {
     flex-wrap: wrap;
 
-    // &--3,
-    // &--2,
-    // &--5 {
-    //   .colsFlex__col {
-    //     flex-basis: 100%;
-    //     margin: 0 auto 20px;
-    //   }
-    // }
+    &--reverseCol-sm {
+      flex-direction: column-reverse;
+    }
+    &--roads {
+      &  > .colsFlex__col {
+        &:nth-child(2n+1) {
+          flex-basis: 100%;
+        }
+        &:nth-child(2n) {
+          flex-basis: 100%;
+        }
+      }
+    }
 
     &__col {
-      &--2
-      // ,
-      // &--3,
-      // &--4
-      {
+      &--2,
+      &--2p {
         flex-basis: 100%;
       }
     }

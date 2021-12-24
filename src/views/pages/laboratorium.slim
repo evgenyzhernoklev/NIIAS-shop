@@ -6,13 +6,7 @@ html lang="ru"
   body.bgBlack
     include logo
     include menu
-
-    a.noticeMore href="#"
-      .noticeMore__in
-        | Последние новости: узнайте, что нового появилось.
-        span.noticeMore__link.linkDetail
-          | Подробнее
-          include icons/arrow-more
+    include notice-dark
 
     .content.colorWhite.pt170
       .content__in
@@ -21,7 +15,7 @@ html lang="ru"
           br
           | Всё доступно.
         .content__cols.colsFlex
-          .colsFlex__col.colsFlex__col--2.pr20
+          .colsFlex__col.colsFlex__col--2.pr20.pr0-sm.mb0-sm
             .content__animation.animationScale
               .animationScale__in
                 img.animationScale__img src="../static/images/laboratorium-scale-1.png" data-index="1"
@@ -45,10 +39,10 @@ html lang="ru"
                 |  к&nbsp;ударно-вибрационным нагрузкам, климатическим
                 |  воздействиям и&nbsp;многое другое.
 
-    .content.mt10.mb60.colorWhite
+    .content.mt10.mb60.mb40-md.colorWhite
       .content__in.pa0
         .content__cols.colsFlex.colsFlex--stretch
-          .colsFlex__col.colsFlex__col--2p.bgDark.pa40.pb120.br40.hiddenInfo.js-hidden-info
+          .colsFlex__col.colsFlex__col--2p.bgDark.pa40.pa20-sm.pb120.pb100-sm.br40.hiddenInfo.js-hidden-info
             h3.content__subtitle.mb30.tac
               | Выберите
               br
@@ -57,20 +51,21 @@ html lang="ru"
               include rotator-labs
               include rotator-labs
             span.hiddenInfo__button.hiddenInfo__button--white.js-hidden-info-button
-            .hiddenInfo__hidden.pa40.br40
+            .hiddenInfo__hidden.pa40.pa20-sm.br40
               p.hiddenInfo__hiddenText
-                | Измерительный и приборный парки постоянно обновляются,
-                |  расширяется область аккредитации на отдельные виды испытаний,
-                |  чтобы вам было из чего выбирать.
+                | Измерительный и&nbsp;приборный парки постоянно обновляются,
+                |  расширяется область аккредитации на&nbsp;отдельные
+                |  виды испытаний, чтобы вам было из&nbsp;чего выбирать.
 
-          .colsFlex__col.colsFlex__col--2p.bgDark.pa40.br40
-            h3.content__subtitle.mb90
+          .colsFlex__col.colsFlex__col--2p.bgDark.pa40.pa20-sm.br40
+            h3.content__subtitle.mb90.mb40-md
               | Комбинируйте в&nbsp;удовольствие.
             p.content__text
-              | Когда образец подвержен воздействию двух и более внешних
-              |  факторов, вам останется только их выбрать. Вы сможете
-              |  проводить сразу несколько испытаний в одном месте. В настоящее
-              |  время в России такие исследования можно пройти только
-              |  в отдельных лабораториях.
+              | Когда образец подвержен воздействию двух и&nbsp;более
+              |  внешних факторов, вам останется только их выбрать.
+              |  Вы сможете проводить сразу несколько испытаний
+              |  в&nbsp;одном месте. В&nbsp;настоящее время в&nbsp;России
+              |  такие исследования можно пройти только в&nbsp;отдельных
+              |  лабораториях.
 
     include footer-dark

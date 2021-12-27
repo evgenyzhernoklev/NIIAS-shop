@@ -1071,6 +1071,10 @@ button,
   margin-bottom: 8px;
 }
 
+.menu--dark .hamburger__line {
+  background-color: #ffffff;
+}
+
 .hiddenInfo {
   position: relative;
 }
@@ -1314,6 +1318,30 @@ button,
 .menu.is-active:before,
 .menu.is-active:after {
   right: 260px;
+}
+
+.menu--dark:before {
+  background-color: #232325;
+}
+
+.menu--dark:after {
+  background-color: #ffffff;
+}
+
+.menu--dark.is-active {
+  background-color: #181818;
+}
+
+.menu--dark .menu__list {
+  background-color: #181818;
+}
+
+.menu--dark .menu__listItemLink {
+  color: #ffffff;
+}
+
+.menu--dark .menu__listItemLink .icon {
+  stroke: #ffffff;
 }
 
 .menu__close {
@@ -1869,6 +1897,34 @@ button,
 
 .hidden-lg {
   display: none;
+}
+
+@media (max-width: 1544px) {
+  .menu {
+    height: 85px;
+  }
+
+  .menu:before,
+  .menu:after {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .menu.is-active {
+    height: auto;
+  }
+
+  .menu.is-active:before,
+  .menu.is-active:after {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.15s ease-out, visibility 0.15s ease-out;
+    transition: all 0.15s ease-out;
+  }
+
+  .menu__close {
+    top: 30px;
+  }
 }
 
 @media (max-width: 1280px) {

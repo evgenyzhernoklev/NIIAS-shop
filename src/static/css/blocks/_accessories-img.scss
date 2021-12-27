@@ -13,6 +13,7 @@
 
   &__img {
     max-width: 580px;
+    width: 100%;
   }
 
   &__text {
@@ -59,6 +60,94 @@
 
       &:before {
         width: 162px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .accessoriesImg {
+    &__text {
+      left: 10%;
+      right: auto;
+      width: 80%;
+
+      &[data-text="1"] {
+        top: 100%;
+
+        &:before {
+          width: 40px;
+        }
+      }
+      &[data-text="2"] {
+        top: 110%;
+
+        &:before {
+          width: 40px;
+        }
+      }
+      &[data-text="3"] {
+        top: 120%;
+
+        &:before {
+          width: 40px;
+        }
+      }
+      &[data-text="4"] {
+        top: 100%;
+        right: auto;
+        text-align: left;
+
+        &:before {
+          width: 40px;
+        }
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media ($tablet) {
+  .accessoriesImg {
+    position: static;
+    margin-top: 40px;
+
+    &__img {
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    &__text {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      margin-left: 100px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .accessoriesImg {
+    &__text {
+      margin-left: 30px;
+      width: auto;
+      font-size: 27px;
+
+      &:before {
+        top: 15px;
+      }
+
+      &[data-text="1"],
+      &[data-text="2"],
+      &[data-text="3"],
+      &[data-text="4"] {
+        &:before {
+          width: 20px;
+        }
       }
     }
   }

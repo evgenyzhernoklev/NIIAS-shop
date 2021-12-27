@@ -51,15 +51,9 @@
         margin-bottom: 40px;
       }
 
-      &--2p {
-        flex-basis: 80%;
-      }
-      &--3p {
-        flex-basis: 100%;
-      }
-      &--text {
-        flex-basis: 100%;
-      }
+      &--2p,
+      &--3p,
+      &--text,
       &--full-md {
         flex-basis: 100%;
       }

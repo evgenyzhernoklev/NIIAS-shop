@@ -26,3 +26,42 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .accessories {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media ($tablet) {
+  .accessories {
+    &__item {
+      padding-bottom: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &__itemAdv {
+      margin-top: 40px;
+      max-width: 480px;
+    }
+  }
+}
+
+@media ($mobile) {
+  .accessories {
+    &__itemTitle {
+      font-size: 30px;
+    }
+
+    &__itemAdvItem {
+      font-size: 18px;
+    }
+  }
+}

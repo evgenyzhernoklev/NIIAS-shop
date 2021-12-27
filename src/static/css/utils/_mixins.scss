@@ -8,11 +8,6 @@
   background-size: $width $height;
 }
 
-// @mixin linear-gradient($angle, $from, $to) {
-//   background: $from;
-//   background: linear-gradient($angle, $from 0%, $to 100%);
-// }
-
 @mixin show() {
   visibility: visible;
   opacity: 1;
@@ -24,13 +19,3 @@
   opacity: 0;
   transition: opacity $transition, visibility $transition;
 }
-
-
-
-//You want X lines of text. Anything after that gracefully cut off
-// @mixin maxTextLines($maxLinesNumber) {
-//   display: -webkit-box;
-//   -webkit-line-clamp: $maxLinesNumber;
-//   -webkit-box-orient: vertical;
-//   overflow: hidden;
-// }

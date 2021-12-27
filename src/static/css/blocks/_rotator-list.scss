@@ -1,5 +1,6 @@
+$items: 5;
 $item-height: 160px;
-$container-height: calc($item-height * 5);
+$container-height: calc($item-height * $items);
 
 .rotatorList {
   position: relative;
@@ -10,7 +11,7 @@ $container-height: calc($item-height * 5);
   &__in {
     position: absolute;
     width: 100%;
-    animation: 7s linear infinite rotation;
+    animation: 7s linear infinite rotation-list;
     opacity: 0.5;
 
     &:nth-child(1) {
@@ -53,7 +54,7 @@ $container-height: calc($item-height * 5);
   }
 }
 
-@keyframes rotation {
+@keyframes rotation-list {
   0% {
     opacity: 1;
     transform: translateY(0);

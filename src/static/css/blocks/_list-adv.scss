@@ -39,6 +39,8 @@
       }
     }
     &--text {
+      position: relative;
+      z-index: 1;
       flex-basis: 60%;
       align-self: center;
       padding: 40px;
@@ -48,16 +50,27 @@
         text-align: left;
       }
     }
+    &--al-center {
+      align-self: center;
+    }
   }
 
   &__title {
     @extend .content__subtitle;
+  }
+
+  &__rotator {
+    padding-left: 30px;
   }
 }
 
 @media ($desktop) {
   .listAdv {
     min-height: 400px;
+
+    &__rotator {
+      padding-left: 0;
+    }
   }
 }
 
@@ -67,6 +80,12 @@
       &--text {
         padding: 30px;
       }
+    }
+
+    &__rotator {
+      margin-left: -30px;
+      width: 370px;
+      transform: scale(0.8);
     }
   }
 }
@@ -100,12 +119,14 @@
         border-radius: 20px;
       }
       &--textBg {
-        position: relative;
-        z-index: 1;
         padding: 20px 15px;
         background-color: rgba($white, 0.9);
         border-radius: 20px;
       }
+    }
+
+    &__rotator {
+      display: none;
     }
   }
 }

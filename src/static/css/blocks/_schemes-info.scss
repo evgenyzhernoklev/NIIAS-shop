@@ -15,3 +15,26 @@
     font: 48px/120% $font-railway;
   }
 }
+
+@media ($tablet) {
+  .schemesInfo {
+    padding-top: 120px;
+
+    &__about {
+      right: 50%;
+      transform: translateX(50%);
+      text-align: center;
+    }
+  }
+}
+
+@media ($mobile) {
+  .schemesInfo {
+    padding-top: 90px;
+
+    &__about {
+      width: 200px;
+      font-size: 30px;
+    }
+  }
+}

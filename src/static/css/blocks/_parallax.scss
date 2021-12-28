@@ -1,0 +1,39 @@
+.parallax {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+  @extend .content;
+
+  &__item {
+    position: absolute;
+
+    &[data-item="main-1"] {
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 72px;
+    }
+    &[data-item="main-2"] {
+      width: 700px;
+      right: 120px;
+      bottom: 0;
+    }
+    &[data-item="main-3"] {
+      display: none;
+      width: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &[data-item="main-4"] {
+      display: none;
+      left: 50%;
+      transform: translateX(-50%);
+      font: 36px/1.2 $font-railway;
+      text-align: center;
+    }
+  }
+
+  &__itemImg {
+    display: block;
+    width: 100%;
+  }
+}

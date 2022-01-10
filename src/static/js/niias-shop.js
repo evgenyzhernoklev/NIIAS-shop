@@ -1,17 +1,12 @@
 "use strict";
 
 import Menu from "../js/menu";
-import Parallax from "../js/parallax";
 
 document.addEventListener('DOMContentLoaded', () => {
   new Menu('.js-menu');
 
-  // init parallax
-  let $parallax = document.body.querySelectorAll('.js-parallax');
+  // init parallax on main page
 
-  for (let i = 0; i < $parallax.length; i++) {
-    new Parallax($parallax[i]);
-  }
 
   // toggle hidden info block
   let buttonToggleHiddenInfo = document.body.querySelectorAll('.js-hidden-info-button');

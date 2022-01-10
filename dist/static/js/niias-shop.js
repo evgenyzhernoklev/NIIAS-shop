@@ -134,8 +134,6 @@
 
     var _menu = _interopRequireDefault(require("../js/menu"));
 
-    var _parallax = _interopRequireDefault(require("../js/parallax"));
-
     function _interopRequireDefault(obj) {
       return obj && obj.__esModule ? obj : {
         "default": obj
@@ -143,101 +141,19 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-      new _menu["default"]('.js-menu'); // init parallax
-
-      var $parallax = document.body.querySelectorAll('.js-parallax');
-
-      for (var i = 0; i < $parallax.length; i++) {
-        new _parallax["default"]($parallax[i]);
-      } // toggle hidden info block
-
+      new _menu["default"]('.js-menu'); // init parallax on main page
+      // toggle hidden info block
 
       var buttonToggleHiddenInfo = document.body.querySelectorAll('.js-hidden-info-button');
 
-      for (var _i = 0; _i < buttonToggleHiddenInfo.length; _i++) {
-        buttonToggleHiddenInfo[_i].addEventListener('click', function (e) {
+      for (var i = 0; i < buttonToggleHiddenInfo.length; i++) {
+        buttonToggleHiddenInfo[i].addEventListener('click', function (e) {
           e.target.closest('.js-hidden-info').classList.toggle('is-shown');
         });
       }
     });
   }, {
-    "../js/menu": "/Users/evgenyzhernoklev/Projects/NIIAS-shop/src/static/js/menu.js",
-    "../js/parallax": "/Users/evgenyzhernoklev/Projects/NIIAS-shop/src/static/js/parallax.js"
-  }],
-  "/Users/evgenyzhernoklev/Projects/NIIAS-shop/src/static/js/parallax.js": [function (require, module, exports) {
-    "use strict";
-
-    Object.defineProperty(exports, "__esModule", {
-      value: true
-    });
-    exports["default"] = void 0;
-
-    function _classCallCheck(instance, Constructor) {
-      if (!(instance instanceof Constructor)) {
-        throw new TypeError("Cannot call a class as a function");
-      }
-    }
-
-    function _defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor) descriptor.writable = true;
-        Object.defineProperty(target, descriptor.key, descriptor);
-      }
-    }
-
-    function _createClass(Constructor, protoProps, staticProps) {
-      if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-      if (staticProps) _defineProperties(Constructor, staticProps);
-      Object.defineProperty(Constructor, "prototype", {
-        writable: false
-      });
-      return Constructor;
-    }
-
-    var Parallax = /*#__PURE__*/function () {
-      function Parallax($container) {
-        _classCallCheck(this, Parallax);
-
-        this.$container = $container;
-        this.$items = this.$container.querySelectorAll('.js-parallax-item');
-        this.init();
-      }
-
-      _createClass(Parallax, [{
-        key: "init",
-        value: function init() {
-          this._setContainerHeight();
-
-          this.listenEvents();
-        }
-      }, {
-        key: "listenEvents",
-        value: function listenEvents() {
-          window.addEventListener('scroll', this.animate.bind(this));
-          window.addEventListener('resize', this._updateElementsPositions.bind(this));
-        }
-      }, {
-        key: "animate",
-        value: function animate(e) {}
-      }, {
-        key: "_setContainerHeight",
-        value: function _setContainerHeight() {
-          this.$container.style.height = document.documentElement.clientHeight + 'px';
-        }
-      }, {
-        key: "_updateElementsPositions",
-        value: function _updateElementsPositions() {
-          this._setContainerHeight();
-        }
-      }]);
-
-      return Parallax;
-    }();
-
-    var _default = Parallax;
-    exports["default"] = _default;
-  }, {}]
+    "../js/menu": "/Users/evgenyzhernoklev/Projects/NIIAS-shop/src/static/js/menu.js"
+  }]
 }, {}, ["/Users/evgenyzhernoklev/Projects/NIIAS-shop/src/static/js/niias-shop.js"]);
+//# sourceMappingURL=maps/niias-shop.js.map

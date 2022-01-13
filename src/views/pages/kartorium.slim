@@ -4,7 +4,29 @@ html lang="ru"
     include head
     title NIIAS shop - Карториум
   body
+    include logo
     include menu
+
+    .parallax.is-dark.js-parallax data-item="kartorium"
+      h1.parallax__item.js-parallax-item.tac data-item="kartorium-1"
+        | Ориентируйтесь на всей
+        br/
+        | сети железных дорог
+        br/
+        | Российской Федерации.
+      .parallax__item.js-parallax-item data-item="kartorium-2"
+        img.parallax__itemImg src="static/images/kartorium-parallax-map-white.png"
+      .parallax__item.js-parallax-item data-item="kartorium-4"
+        | Вам доступны схемы железных дорог
+        |  Российской Федерации, 16&nbsp;из&nbsp;которых
+        |  являются филиалами ОАО&nbsp;«РЖД», одна&nbsp;—
+        |  ФГУП «Крымская железная дорога»&nbsp;—
+        |  находится в&nbsp;ведении Федерального
+        |  агентства железнодорожного транспорта;
+        |  кроме того, на&nbsp;врезке схемы
+        |  Дальневосточной железной дороги
+        |  дана линия дорог, принадлежащих
+        |  АО&nbsp;«АК&nbsp;«Железные дороги Якутии».
 
     .content.bgLight
       .content__in

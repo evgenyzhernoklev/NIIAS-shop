@@ -77,22 +77,6 @@
       width: 50%;
     }
   }
-
-  &__button {
-    padding: 8px 22px 6px;
-    display: inline-block;
-    color: $white;
-    font: 24px/28px $font-railway;
-    text-align: center;
-    letter-spacing: -0.045em;
-    background-color: $blue;
-    cursor: pointer;
-    border-radius: 20px;
-
-    &:hover {
-      background-color: $blue-hover;
-    }
-  }
 }
 
 @media ($desktop) {

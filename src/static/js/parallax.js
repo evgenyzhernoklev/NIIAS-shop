@@ -15,6 +15,7 @@ class Parallax {
 
     this._initMainPage();
     this._initKartoriumSchemePage();
+    this._initKartoriumAlbumPage();
   }
 
   _initMainPage() {
@@ -117,6 +118,44 @@ class Parallax {
           opacity: [
             [1400, 2200],
             [1, 0]
+          ]
+        }
+      }
+    );
+  }
+
+  _initKartoriumAlbumPage() {
+    lax.addElements(
+      '.js-parallax-item[data-item="kartorium-album-1"]',
+      {
+        scrollY: {
+          translateY: [
+            [0, 200, 1200],
+            ['0', '0', '-screenHeight']
+          ]
+        }
+      }
+    );
+    lax.addElements(
+      '.js-parallax-item[data-item="kartorium-album-2"]',
+      {
+        scrollY: {
+          translateY: [
+            [300, 800, 1500, 2500],
+            ['screenHeight', '0', '0', '-screenHeight'],
+            { inertia: 1 }
+          ]
+        }
+      }
+    );
+    lax.addElements(
+      '.js-parallax-item[data-item="kartorium-album-3"]',
+      {
+        scrollY: {
+          translateY: [
+            [1600, 2100, 2700, 3200],
+            ['screenHeight', '0', '0', '-screenHeight'],
+            { inertia: 5 }
           ]
         }
       }

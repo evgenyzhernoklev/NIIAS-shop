@@ -232,7 +232,7 @@ button,
   width: 50%;
 }
 
-.content__button {
+.linkButton {
   padding: 8px 22px 6px;
   display: inline-block;
   color: #ffffff;
@@ -244,7 +244,7 @@ button,
   border-radius: 20px;
 }
 
-.content__button:hover {
+.linkButton:hover {
   background-color: rgba(16, 86, 235, 0.75);
 }
 
@@ -1514,6 +1514,10 @@ button,
   min-height: 2700px;
 }
 
+.parallax[data-item=kartorium-album] {
+  min-height: 3100px;
+}
+
 .parallax__item {
   position: fixed;
   z-index: 10;
@@ -1569,6 +1573,32 @@ button,
 .parallax__item[data-item=kartorium-scheme-2] img {
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
+}
+
+.parallax__item[data-item=kartorium-album-1] {
+  top: 50%;
+  left: 50%;
+  margin: -128px 0 0 -320px;
+  font-size: 58px;
+  line-height: 72px;
+}
+
+.parallax__item[data-item=kartorium-album-1] span {
+  display: inline-block;
+  font-size: 36px;
+}
+
+.parallax__item[data-item=kartorium-album-2] {
+  width: 480px;
+  top: 50%;
+  left: 50%;
+  margin: -207px 0 0 -240px;
+}
+
+.parallax__item[data-item=kartorium-album-3] {
+  top: 50%;
+  left: 50%;
+  margin: -21px 0 0 -59px;
 }
 
 .parallax__itemImg {

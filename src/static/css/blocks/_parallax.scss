@@ -1,15 +1,21 @@
 .parallax {
   position: relative;
-  min-height: 600px;
   overflow: hidden;
   @extend .content;
 
+  &[data-item="main"] {
+    min-height: 3000px;
+  }
+
   &__item {
-    position: absolute;
+    position: fixed;
+    z-index: 10;
 
     &[data-item="main-1"] {
+      z-index: 1;
       top: 50%;
-      transform: translateY(-50%);
+      left: 89px;
+      margin-top: -90px;
       font-size: 72px;
     }
     &[data-item="main-2"] {
@@ -18,15 +24,14 @@
       bottom: 0;
     }
     &[data-item="main-3"] {
-      display: none;
       width: 300px;
+      top: 50%;
       left: 50%;
-      transform: translateX(-50%);
+      margin: -150px 0 0 -150px;
     }
     &[data-item="main-4"] {
-      display: none;
       left: 50%;
-      transform: translateX(-50%);
+      margin-left: -315px;
       font: 36px/1.2 $font-railway;
       text-align: center;
     }

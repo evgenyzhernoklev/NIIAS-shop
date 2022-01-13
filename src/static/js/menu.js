@@ -1,8 +1,8 @@
 "use strict";
 
 class Menu {
-  constructor($container) {
-    this.$container = document.body.querySelector($container);
+  constructor() {
+    this.$container = document.body.querySelector('.js-menu');
     this.$close     = this.$container.querySelector('.js-menu-close');
     this.$items     = this.$container.querySelectorAll('.js-menu-item');
     this.$links     = this.$container.querySelectorAll('.js-menu-link');

@@ -11,7 +11,7 @@ $container-height: calc($item-height * $items);
     position: absolute;
     width: 100%;
     font: 24px/2 $font-railway;
-    animation: 5s linear infinite rotation-cities;
+    animation: 7s linear infinite rotation-cities;
 
     &:nth-child(1) {
       top: 0;
@@ -26,13 +26,13 @@ $container-height: calc($item-height * $items);
 
     &:nth-child(18) {
       .rotatorCities__itemTitle {
-        animation: 5s linear infinite rotation-cities-item-show;
+        animation: 7s linear infinite rotation-cities-item-show;
       }
     }
   }
 
   &__itemTitle {
-    animation: 5s linear infinite rotation-cities-item-hide;
+    animation: 7s linear infinite rotation-cities-item-hide;
   }
 }
 

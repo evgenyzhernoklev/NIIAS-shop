@@ -9,13 +9,12 @@ class Parallax {
 
   init() {
     lax.init();
-
-    // Add a driver that we use to control our animations
     lax.addDriver('scrollY', function() {
       return window.scrollY;
     }, { inertiaEnabled: true });
 
     this._initMainPage();
+    this._initKartoriumSchemePage();
   }
 
   _initMainPage() {
@@ -85,6 +84,39 @@ class Parallax {
           translateY: [
             [1500, 2000, 2200, 2500, 3000],
             ['screenHeight', 'screenHeight/2', 'screenHeight/2 - 100', 'screenHeight/2 - 100', '-screenHeight']
+          ]
+        }
+      }
+    );
+  }
+
+  _initKartoriumSchemePage() {
+    lax.addElements(
+      '.js-parallax-item[data-item="kartorium-scheme-1"]',
+      {
+        scrollY: {
+          translateX: [
+            [0, 400, 1400],
+            ['0', '0', '-screenWidth']
+          ]
+        }
+      }
+    );
+    lax.addElements(
+      '.js-parallax-item[data-item="kartorium-scheme-2"]',
+      {
+        scrollY: {
+          translateX: [
+            [600, 1400],
+            ['screenWidth', '0']
+          ],
+          scale: [
+            [1400, 2200],
+            [1, 2]
+          ],
+          opacity: [
+            [1400, 2200],
+            [1, 0]
           ]
         }
       }

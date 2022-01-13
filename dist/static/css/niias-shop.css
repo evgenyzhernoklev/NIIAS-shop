@@ -148,6 +148,8 @@ button,
 
 .content,
 .parallax {
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   min-width: 320px;
   padding: 0 40px;
@@ -228,6 +230,22 @@ button,
 
 .content__img[data-width="50%"] {
   width: 50%;
+}
+
+.content__button {
+  padding: 8px 22px 6px;
+  display: inline-block;
+  color: #ffffff;
+  font: 24px/28px "FSRAILWAY Book", sans-serif;
+  text-align: center;
+  letter-spacing: -0.045em;
+  background-color: #2871FF;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.content__button:hover {
+  background-color: rgba(16, 86, 235, 0.75);
 }
 
 .accessoriesImg {
@@ -913,6 +931,8 @@ button,
 }
 
 .footer {
+  position: relative;
+  z-index: 2;
   font: 14px/17px "FSRAILWAY Book", sans-serif;
   color: #ffffff;
   background: #828282;
@@ -1264,7 +1284,7 @@ button,
 
 .logo {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 36px;
   left: 89px;
   display: inline-block;
@@ -1490,6 +1510,10 @@ button,
   min-height: 3000px;
 }
 
+.parallax[data-item=kartorium-scheme] {
+  min-height: 2700px;
+}
+
 .parallax__item {
   position: fixed;
   z-index: 10;
@@ -1521,6 +1545,30 @@ button,
   margin-left: -315px;
   font: 36px/1.2 "FSRAILWAY Book", sans-serif;
   text-align: center;
+}
+
+.parallax__item[data-item=kartorium-scheme-1] {
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -207px;
+  font-size: 58px;
+  line-height: 48px;
+}
+
+.parallax__item[data-item=kartorium-scheme-1] span {
+  font-size: 36px;
+}
+
+.parallax__item[data-item=kartorium-scheme-2] {
+  width: 900px;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -450px;
+}
+
+.parallax__item[data-item=kartorium-scheme-2] img {
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
 }
 
 .parallax__itemImg {
@@ -1913,6 +1961,10 @@ button,
   font-size: 24px;
 }
 
+.fs30 {
+  font-size: 30px;
+}
+
 .bgLight {
   background-color: #F9F9F9;
 }
@@ -1931,6 +1983,10 @@ button,
 
 .br40 {
   border-radius: 40px;
+}
+
+.ma {
+  margin: auto;
 }
 
 .mb10 {
@@ -1971,6 +2027,10 @@ button,
 
 .mt20 {
   margin-top: 20px !important;
+}
+
+.mt40 {
+  margin-top: 40px !important;
 }
 
 .mt60 {
@@ -2751,12 +2811,16 @@ button,
     text-align: center;
   }
 
+  .fs21-sm {
+    font-size: 21px;
+  }
+
   .fs24-sm {
     font-size: 24px;
   }
 
-  .fs21-sm {
-    font-size: 21px;
+  .fs30-sm {
+    font-size: 30px;
   }
 
   .mt20-sm {

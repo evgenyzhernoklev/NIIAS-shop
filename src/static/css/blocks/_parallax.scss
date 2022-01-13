@@ -7,10 +7,15 @@
     min-height: 3000px;
   }
 
+  &[data-item="kartorium-scheme"] {
+    min-height: 2700px;
+  }
+
   &__item {
     position: fixed;
     z-index: 10;
 
+    // main page
     &[data-item="main-1"] {
       z-index: 1;
       top: 50%;
@@ -34,6 +39,30 @@
       margin-left: -315px;
       font: 36px/1.2 $font-railway;
       text-align: center;
+    }
+
+    // kartorium-scheme page
+    &[data-item="kartorium-scheme-1"] {
+      top: 50%;
+      left: 50%;
+      margin: -50px 0 0 -207px;
+      font-size: 58px;
+      line-height: 48px;
+
+      span {
+        font-size: 36px;
+      }
+    }
+    &[data-item="kartorium-scheme-2"] {
+      width: 900px;
+      top: 50%;
+      left: 50%;
+      margin: -200px 0 0 -450px;
+
+      img {
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+      }
     }
   }
 

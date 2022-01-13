@@ -694,8 +694,7 @@
       _createClass(Parallax, [{
         key: "init",
         value: function init() {
-          _lax["default"].init(); // Add a driver that we use to control our animations
-
+          _lax["default"].init();
 
           _lax["default"].addDriver('scrollY', function () {
             return window.scrollY;
@@ -704,6 +703,8 @@
           });
 
           this._initMainPage();
+
+          this._initKartoriumSchemePage();
         }
       }, {
         key: "_initMainPage",
@@ -739,6 +740,23 @@
           _lax["default"].addElements('.js-parallax-item[data-item="main-4"]', {
             scrollY: {
               translateY: [[1500, 2000, 2200, 2500, 3000], ['screenHeight', 'screenHeight/2', 'screenHeight/2 - 100', 'screenHeight/2 - 100', '-screenHeight']]
+            }
+          });
+        }
+      }, {
+        key: "_initKartoriumSchemePage",
+        value: function _initKartoriumSchemePage() {
+          _lax["default"].addElements('.js-parallax-item[data-item="kartorium-scheme-1"]', {
+            scrollY: {
+              translateX: [[0, 400, 1400], ['0', '0', '-screenWidth']]
+            }
+          });
+
+          _lax["default"].addElements('.js-parallax-item[data-item="kartorium-scheme-2"]', {
+            scrollY: {
+              translateX: [[600, 1400], ['screenWidth', '0']],
+              scale: [[1400, 2200], [1, 2]],
+              opacity: [[1400, 2200], [1, 0]]
             }
           });
         }

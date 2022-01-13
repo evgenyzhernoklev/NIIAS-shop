@@ -53,6 +53,9 @@
 .fs24 {
   font-size: 24px;
 }
+.fs30 {
+  font-size: 30px;
+}
 
 @media ($desktop) {
   .fs32-lg {
@@ -61,11 +64,14 @@
 }
 
 @media ($mobile) {
+  .fs21-sm {
+    font-size: 21px;
+  }
   .fs24-sm {
     font-size: 24px;
   }
-  .fs21-sm {
-    font-size: 21px;
+  .fs30-sm {
+    font-size: 30px;
   }
 }
 
@@ -93,6 +99,9 @@
 }
 
 // margins
+.ma {
+  margin: auto;
+}
 .mb10 {
   margin-bottom: 10px !important;
 }
@@ -122,6 +131,9 @@
 }
 .mt20 {
   margin-top: 20px !important;
+}
+.mt40 {
+  margin-top: 40px !important;
 }
 .mt60 {
   margin-top: 60px !important;

@@ -2,6 +2,9 @@ $menu-link-hover: #001744;
 $menu-link-hover-dark: #4182ff;
 
 .footer {
+  position: relative;
+  z-index: 2;
+
   &--dark {
     background-color: #1D1D1F;
 

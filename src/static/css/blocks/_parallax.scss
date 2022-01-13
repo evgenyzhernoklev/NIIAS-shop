@@ -10,6 +10,9 @@
   &[data-item="kartorium-scheme"] {
     min-height: 2700px;
   }
+  &[data-item="kartorium-album"] {
+    min-height: 3100px;
+  }
 
   &__item {
     position: fixed;
@@ -63,6 +66,31 @@
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
         border-radius: 12px;
       }
+    }
+
+    // kartorium-album page
+    &[data-item="kartorium-album-1"] {
+      top: 50%;
+      left: 50%;
+      margin: -128px 0 0 -320px;
+      font-size: 58px;
+      line-height: 72px;
+
+      span {
+        display: inline-block;
+        font-size: 36px;
+      }
+    }
+    &[data-item="kartorium-album-2"] {
+      width: 480px;
+      top: 50%;
+      left: 50%;
+      margin: -207px 0 0 -240px;
+    }
+    &[data-item="kartorium-album-3"] {
+      top: 50%;
+      left: 50%;
+      margin: -21px 0 0 -59px;
     }
   }
 

@@ -3,10 +3,17 @@
   overflow: hidden;
   @extend .content;
 
+  &.is-dark {
+    background-color: #151516;
+  }
+
   &[data-item="main"] {
     min-height: 3000px;
   }
 
+  &[data-item="kartorium"] {
+    min-height: 3850px;
+  }
   &[data-item="kartorium-scheme"] {
     min-height: 2700px;
   }
@@ -42,6 +49,34 @@
       margin-left: -315px;
       font: 36px/1.2 $font-railway;
       text-align: center;
+    }
+
+    // kartorium page
+    &[data-item="kartorium-1"] {
+      top: 50%;
+      left: 50%;
+      margin: -104px 0 0 -341px;
+      font-size: 58px;
+      text-align: center;
+      color: $white;
+    }
+    &[data-item="kartorium-2"] {
+      width: 900px;
+      top: 50%;
+      left: 50%;
+      margin: -256px 0 0 -450px;
+    }
+    &[data-item="kartorium-3"] {
+
+    }
+    &[data-item="kartorium-4"] {
+      width: 680px;
+      top: 50%;
+      left: 50%;
+      margin: -72px 0 0 -340px;
+      font-size: 20px;
+      text-align: center;
+      color: $white;
     }
 
     // kartorium-scheme page

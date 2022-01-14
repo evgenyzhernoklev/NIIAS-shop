@@ -908,4 +908,3 @@
     exports["default"] = _default;
   }, {}]
 }, {}, ["/Users/evgenyzhernoklev/Projects/NIIAS-shop/src/static/js/niias-shop.js"]);
-//# sourceMappingURL=maps/niias-shop.js.map

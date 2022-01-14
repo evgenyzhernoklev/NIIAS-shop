@@ -1317,7 +1317,7 @@ button,
   right: 0;
   width: 90px;
   overflow: hidden;
-  transition: width 0.15s ease-out;
+  transition: width 0.15s ease-out, background-color 0.15s ease-out;
 }
 
 .menu:before,
@@ -1327,7 +1327,7 @@ button,
   position: fixed;
   right: 90px;
   width: 2px;
-  transition: right 0.15s ease-out;
+  transition: right 0.15s ease-out, background-color 0.15s ease-out;
 }
 
 .menu:before {
@@ -1400,6 +1400,7 @@ button,
   position: relative;
   padding: 0 28px;
   background-color: #ffffff;
+  transition: background-color 0.15s ease-out;
 }
 
 .menu__list .menu__list {
@@ -1408,7 +1409,7 @@ button,
   top: 0;
   left: 100%;
   width: 100%;
-  transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out, background-color 0.15s ease-out;
 }
 
 .menu__listItem.is-active .menu__list {
@@ -1463,6 +1464,7 @@ button,
 .noticeMore {
   display: block;
   position: absolute;
+  z-index: 4;
   top: 113px;
   left: 0;
   right: 0;

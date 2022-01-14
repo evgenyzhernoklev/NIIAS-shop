@@ -583,6 +583,15 @@
 
           for (var _i = 0; _i < this.$linksBack.length; _i++) {
             this.$linksBack[_i].addEventListener('click', this._showPrevMenu.bind(this));
+          } // for kartorium page
+
+
+          var parallaxKartorium = document.body.querySelector('.js-parallax[data-item="kartorium"]');
+
+          if (parallaxKartorium) {
+            window.addEventListener('scroll', this._scrollWithParallax.bind(this, parallaxKartorium.offsetHeight));
+
+            this._scrollWithParallax(parallaxKartorium.offsetHeight);
           }
         }
       }, {
@@ -606,6 +615,15 @@
         value: function _showPrevMenu(e) {
           e.preventDefault();
           e.target.closest('.js-menu-item').classList.remove(this.classList.active);
+        }
+      }, {
+        key: "_scrollWithParallax",
+        value: function _scrollWithParallax(parallaxHeight) {
+          if (window.scrollY + 65 > parallaxHeight) {
+            this.$container.classList.remove('menu--dark');
+          } else {
+            this.$container.classList.add('menu--dark');
+          }
         }
       }]);
 

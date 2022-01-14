@@ -25,6 +25,13 @@ class Menu {
     for (let i = 0; i < this.$linksBack.length; i++) {
       this.$linksBack[i].addEventListener('click', this._showPrevMenu.bind(this));
     }
+
+    // for kartorium page
+    let parallaxKartorium = document.body.querySelector('.js-parallax[data-item="kartorium"]');
+    if (parallaxKartorium) {
+      window.addEventListener('scroll', this._scrollWithParallax.bind(this, parallaxKartorium.offsetHeight));
+      this._scrollWithParallax(parallaxKartorium.offsetHeight);
+    }
   }
 
   _toggleMenu() {
@@ -43,6 +50,14 @@ class Menu {
   _showPrevMenu(e) {
     e.preventDefault();
     e.target.closest('.js-menu-item').classList.remove(this.classList.active);
+  }
+
+  _scrollWithParallax(parallaxHeight) {
+    if (window.scrollY + 65 > parallaxHeight) {
+      this.$container.classList.remove('menu--dark');
+    } else {
+      this.$container.classList.add('menu--dark');
+    }
   }
 }
 
